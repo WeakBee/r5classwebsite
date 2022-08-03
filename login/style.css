@@ -30,6 +30,7 @@ form{
 }
 .form-group .input-control {
 	padding: 10px 16px;
+    background-color: transparent;
 	width: 100%;
 	box-sizing: border-box;
 	font-size:15px;
@@ -76,8 +77,19 @@ input:focus{
     text-decoration: none;
     font-weight: 600;
 }
+.rememberme-box{
+    display: flex;
+    align-items: center;
+}
+#rememberme{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
 .rememberme-label{
     font-weight: 600;
     user-select:none;
     -moz-user-select:none;
+    cursor: pointer;
 }

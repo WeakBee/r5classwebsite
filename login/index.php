@@ -33,8 +33,10 @@
 		<div class="form-group">
 			<input type="password" name="pass" placeholder="Password" class="input-control">
 		</div>
-
-		<input id="rememberme" type="checkbox" name="check" > <label class="rememberme-label" for="rememberme">Remember Me</label><br></br>
+		<div class="rememberme-box">
+		<input id="rememberme" type="checkbox" name="check" > <label class="rememberme-label" for="rememberme">Remember Me</label>
+		</div>
+		<br>
 		<center>
 		<b><input type="submit" name="submit" value="Sign in" class="btn"></b>
 		</center>
