@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.301);
+    padding: 20px 50px;
+}
+.kartutim{
+    margin-bottom: 30px;
+}
+.card{
+    position: relative;
+    padding: 20px 20px 0 20px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card:hover .kontak{
+    bottom: 0;
+}
+.judul{
+    margin-bottom: 20px;
+}
+.meet{
+    color: blue;
+    font-weight: 700;
+}
+.kontak{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    padding: 10px 20px;
+    bottom: -30%;
+    background-color: white;
+    box-shadow: 0 -10px 5px rgba(0, 0, 0, 0.116);
+    transition: 0.5s;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+.kontak div{
+    text-align: start;
+    font-size: 12px;
+    color: blue;
+    margin-bottom: 5px;
+}
+.kontak .panahbawah{
+    margin-bottom: 10px;
+}
+.kontak div img{
+    width: 20px;
+    margin-right: 10px;
+}
