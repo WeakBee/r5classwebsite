@@ -53,3 +53,85 @@
     width: 20px;
     margin-right: 10px;
 }
+.page-login{
+	width:100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.box{
+border:1px solid #ddd;
+background-color: #fff;
+border-radius: 15px;
+}
+
+
+.box-body {
+	padding:16px;
+	border-radius: 15px;
+	border:1px solid #2FF3E0;
+}
+
+
+
+form{
+	margin:15px 0;
+}
+.form-group {
+	margin-bottom: 15px;
+	border-radius: 15px;
+	border:1px solid #2FF3E0;
+	
+}
+
+.form-group .input-control {
+	padding: 10px 16px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size:15px;
+	border-radius: 15px;
+	border:1px solid #2A41F8;
+	
+}
+
+.box-login {
+	width:350px;
+	border-radius: 15px;
+	
+}
+
+.btn{
+
+	width: 200px;
+	padding:5px 16px;
+	font-size:15px;
+	background-color: blue;
+	border-radius: 15px;
+	color: #FFFFFF;
+	
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+
+.alert {
+	padding:10px 16px;
+	border:1px solid;
+	border-radius: 15px;
+}
+
+.alert-error {
+	
+	border:1px solid #2A41F8;
+	
+	border-radius: 15px;
+}
+.cover{
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
