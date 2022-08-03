@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 .page-login{
 	width:100%;
 	height:100vh;
@@ -8,46 +12,46 @@
 }
 .box{
     border:1px solid #ddd;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.096);
 }
 .box-body {
 	padding:16px;
 	border-radius: 15px;
-	border:1px solid #2FF3E0;
 }
-
 form{
 	margin:15px 0;
 }
 .form-group {
 	margin-bottom: 15px;
 	border-radius: 15px;
-	border:1px solid #2FF3E0;
 }
 .form-group .input-control {
 	padding: 10px 16px;
 	width: 100%;
 	box-sizing: border-box;
 	font-size:15px;
-	border-radius: 15px;
-	border:1px solid #2A41F8;
-	
+	border-radius: 15px;	
+}
+input:focus{
+    border: 3px solid #2A41F8;
+    outline: none !important;
 }
 .box-login {
-	width:350px;
+	width:450px;
 	border-radius: 15px;
-	
+	padding: 10px 40px;
 }
 .btn{
-
-	width: 200px;
-	padding:5px 16px;
+	width: 100%;
+	padding:10px;
 	font-size:15px;
-	background-color: blue;
-	border-radius: 15px;
+	background-color: #2A41F8;
+	border-radius: 10px;
+    font-weight: 600;
 	color: #FFFFFF;
-	
 }
 .btn:hover {
 	cursor: pointer;
@@ -66,4 +70,14 @@ form{
 .cover{
     background-repeat:no-repeat;
     background-size:100% 100%;
+}
+.daftar{
+    color: #2A41F8;
+    text-decoration: none;
+    font-weight: 600;
+}
+.rememberme-label{
+    font-weight: 600;
+    user-select:none;
+    -moz-user-select:none;
 }

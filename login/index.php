@@ -24,7 +24,6 @@
 	<form action="" method="POST">
 		<img src="../assets/Login/icon-black.png">
 		<h2>Sign In</h2>
-		<br>
 		<label>Login untuk masuk menggunakan akun yang telah terdaftar</label>
 		<br></br>
 		<div class="form-group">
@@ -35,14 +34,14 @@
 			<input type="password" name="pass" placeholder="Password" class="input-control">
 		</div>
 
-		<input type="checkbox" name="check" ><b> Remember Me </b><br></br>
+		<input id="rememberme" type="checkbox" name="check" > <label class="rememberme-label" for="rememberme">Remember Me</label><br></br>
 		<center>
 		<b><input type="submit" name="submit" value="Sign in" class="btn"></b>
 		</center>
 		<br>
 		<div>
 		<center>
-		<label><b>Belum Punya Akun ? </b> <a href="#">Daftar</a></label>
+		<label><b>Belum Punya Akun ? </b> <a class="daftar" href="#">Daftar</a></label>
 		</center>
 		</div>
 	</form>
