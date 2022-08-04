@@ -2,27 +2,35 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-.page-login{
-	width:100%;
-	height:100vh;
+body{
+	background:url(../assets/Login/bg-login.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	height: 100vh;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+}
+
+/* Kotak Login*/
+.login-box{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 40px 70px;
+	width: 450px;
 	border-radius: 15px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
-.box{
-    border:1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    border: none;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.096);
+/* Kotak Login*/
+
+/* Form dan Input */
+.judul-login{
+	font-weight: 600;
 }
-.box-body {
-	padding:16px;
-	border-radius: 15px;
-}
-form{
-	margin:15px 0;
+.ket-login{
+	font-size: 12px;
+	color: var(--warna6);
 }
 .form-group {
 	margin-bottom: 15px;
@@ -40,11 +48,9 @@ input:focus{
     border: 3px solid #2A41F8;
     outline: none !important;
 }
-.box-login {
-	width:450px;
-	border-radius: 15px;
-	padding: 10px 40px;
-}
+/* Form Input */
+
+/* Button */
 .btn{
 	width: 100%;
 	padding:10px;
@@ -57,26 +63,9 @@ input:focus{
 .btn:hover {
 	cursor: pointer;
 }
-.alert {
-	padding:10px 16px;
-	border:1px solid;
-	border-radius: 15px;
-}
-.alert-error {
-	
-	border:1px solid #2A41F8;
-	
-	border-radius: 15px;
-}
-.cover{
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-}
-.daftar{
-    color: #2A41F8;
-    text-decoration: none;
-    font-weight: 600;
-}
+/* Button */
+
+/* Remember Me */
 .rememberme-box{
     display: flex;
     align-items: center;
@@ -85,11 +74,39 @@ input:focus{
     cursor: pointer;
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .rememberme-label{
     font-weight: 600;
+	font-size: 15px;
     user-select:none;
     -moz-user-select:none;
     cursor: pointer;
 }
+/* Remember Me */
+
+/* BLM PUNYA AKUN */
+.blmpunya{
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 13px;
+}
+.daftar{
+    color: #2A41F8;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* BLM PUNYA AKUN */
+
+/* ALERT (BLM KEPAKE) */
+.alert {
+	padding:10px 16px;
+	border:1px solid;
+	border-radius: 15px;
+}
+.alert-error {
+	border:1px solid #2A41F8;
+	border-radius: 15px;
+}
+/* ALERT (BLM KEPAKE) */
