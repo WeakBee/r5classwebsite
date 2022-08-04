@@ -57,3 +57,11 @@ body{
     width: 20px;
     margin-right: 10px;
 }
+@media (max-width: 991.98px) { 
+    .container{
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+        position: relative;
+        padding: 80px 10px 20px 10px;
+    }
+}
