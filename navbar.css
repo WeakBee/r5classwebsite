@@ -43,6 +43,7 @@
 }
 .nav-bar div span{
     position: absolute;
+    width: 200px;
     opacity: 0;
     transition: 0.5s;
 }

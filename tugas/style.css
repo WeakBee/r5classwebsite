@@ -7,3 +7,25 @@ body{
     position: relative;
     padding: 30px 90px;
 }
+
+.row-judul .kolom-kanan{
+    display: flex;
+    align-items: center;
+}
+.row-judul .kolom-kiri h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+.row-judul .kolom-kiri p{
+    font-size: 14px;
+    color: var(--warna6);
+}
+.button-intruksi{
+    background-color: var(--warna1);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
