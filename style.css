@@ -26,7 +26,7 @@ body {
     padding: 15px;
 }
 .scroll{
-    height: 30vh;
+    height: 210px;
     overflow-y: scroll;
     margin-bottom: 30px;
 }
@@ -55,6 +55,7 @@ body {
 .kolom-kanan {
     background-color: var(--warna3);
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
 }
 .profile{
     margin-top: 30px;
@@ -66,25 +67,41 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-button{
+.button{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.button button{
     background-color: var(--warna1);
-    border-radius: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    border-radius: 10px;
+    width: 250px;
     color: white;
-    gap: 10px;
-    padding: 19px 60px;
+    padding: 10px 25px;
     border: none;
 }
-.satu{
+.leaderboard{
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.leaderboard li{
+    background-color: transparent;
+    border: 0;
+}
+.list-group-item.disabled, .list-group-item:disabled {
+    background-color: transparent;
+}
+.leaderboard .satu{
     background-color: var(--warna8);
 }
-.dua{
+.leaderboard .dua{
     background-color: var(--warna9);
 }
-.tiga{
+.leaderboard .tiga{
     background-color: var(--warna10);
 }
 /* KOLOM KANAN */
