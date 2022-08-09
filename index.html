@@ -78,19 +78,32 @@
                 </script> -->
 
                 <script>
-                    var tw = new Date();
-                    if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
-                    else (a = tw.getTime());
-                    tw.setTime(a);
-                    // var tahun = tw.getFullYear();
-                    var hari = tw.getDay();
-                    var bulan = tw.getMonth();
-                    var tanggal = tw.getDate();
-                    var hariarray = new Array("Minggu,", "Senin,", "Selasa,", "Rabu,", "Kamis,", "Jum'at,", "Sabtu,");
-                    var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+                    setInterval(myTimer, 1000);
+                    function myTimer() {
+                        var tw = new Date();
+                        if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
+                        else (a = tw.getTime());
+                        tw.setTime(a);
+                        // var tahun = tw.getFullYear();
+                        var hari = tw.getDay();
+                        var bulan = tw.getMonth();
+                        var tanggal = tw.getDate();
+                        var hariarray = new Array("Minggu,", "Senin,", "Selasa,", "Rabu,", "Kamis,", "Jum'at,", "Sabtu,");
+                        var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
 
-                    document.getElementById("time").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + " | " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10) ? "0" : "") + tw.getMinutes() + (" WIB ");
+                        document.getElementById("time").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + " | " + tw.toLocaleTimeString() + (" WIB ");
+                    }
                 </script>
+
+                <!-- <script>
+                    setInterval(myTimer,500);
+
+                    function myTimer() {
+                    const d = new Date();
+                    document.getElementById("time").innerHTML = d.toLocaleTimeString();
+                    }
+                    
+                </script> -->
                 <!-- WAKTU -->
 
                 <!-- AKTIVITAS -->
@@ -118,11 +131,14 @@
                     </div>
                 </div>
                 <!-- MATKUL -->
-                <div class="card" style="width: 12rem;">
+                <div class="card" style="">
                     <img src="./assets/Hubungi Kami/foto5.png" class="card-img-top">
-                    <h5 class="card-title">IMK</h5>
-                    <p>08:00 - 10:00</p>
-                    <p>Pertemuan 10</p>
+                    <div class="content">
+                        <h5 class="card-title">IMK</h5>
+                        <p>08:00 - 10:00</p>
+                        <p>Pertemuan 10</p>
+                    </div>
+
                 </div>
             </div>
             <!-- KOLOM KIRI -->
@@ -138,7 +154,7 @@
                     <p class="text-center">@aksara</p>
                 </div>
                 <div class="rank text-center">
-                   <p>Rank</p>
+                    <p>Rank</p>
                 </div>
                 <div class="leaderboard">
                     <ul class="list-group">

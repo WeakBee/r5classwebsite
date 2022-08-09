@@ -47,8 +47,12 @@ body {
 }
 .card{
     margin-bottom: 20px;
+    width: 10rem;
 }
-
+.content{
+    position: absolute;
+    color:aliceblue;
+}
 /* KOLOM KIRI */
 
 /* KOLOM KANAN */
@@ -67,6 +71,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+<<<<<<< Updated upstream
 .button{
     position: absolute;
     bottom: 25px;
@@ -76,6 +81,17 @@ body {
     width: 100%;
 }
 .button button{
+=======
+.rank{
+    background-color: var(--warna11);
+    border-radius: 15px;
+}
+.list-group{
+    background-color: var(--warna11);
+    border-radius: 15px;
+}
+button{
+>>>>>>> Stashed changes
     background-color: var(--warna1);
     border-radius: 10px;
     width: 250px;
@@ -98,10 +114,10 @@ body {
 .leaderboard .satu{
     background-color: var(--warna8);
 }
-.leaderboard .dua{
+.dua{
     background-color: var(--warna9);
 }
-.leaderboard .tiga{
+.tiga{
     background-color: var(--warna10);
 }
 /* KOLOM KANAN */
