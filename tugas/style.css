@@ -168,6 +168,13 @@ b{
 .row-judul-tugas{
     background-color: var(--warna2);
 }
+.row-judul-tugas .kolom-kiri h1{
+    margin: 0;
+    font-weight: 600;
+}
+.row-judul-tugas .kolom-kiri p{
+    margin: 0;
+}
 .row-judul-tugas .kolom-kanan{
     display: flex;
     align-items: center;
@@ -193,6 +200,12 @@ b{
     align-items: center;
     margin-bottom: 20px;
     padding: 15px 20px;
+}
+.sub-tugas:nth-child(1){
+    width: 35%;
+}
+.sub-tugas:nth-child(5){
+    width: 25%;
 }
 .sub-tugas{
     width: 20%;
