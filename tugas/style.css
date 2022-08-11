@@ -104,64 +104,48 @@ b{
     border: 2px solid rgba(0, 0, 0, 0.384);
     border-style: none;
     border-left-style: solid;
-    padding: 15px;
-    text-align: center;
-    position: relative;
+    padding: 0 15px;
 }
 .row-rangkuman .peserta-terbaik{
     font-weight: 700;
     font-size: 20px;
+    text-align: center;
 }
-.row-rangkuman .profil-box{
+.row-rangkuman .kolom-kanan .profil-box{
     background-color: var(--warna1);
-    padding: 15px;
+    padding: 3px 20px;
+    width: 100%;
     border-radius: 10px;
     color: white;
     margin-bottom: 10px;
-}
-.row-rangkuman .profil-user{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
-.row-rangkuman .nama{
-    font-weight: 600;
-    text-align: start;
+.row-rangkuman .kolom-kanan .profil-box:nth-child(2){
+    background-color: var(--warna8);
+    color: black;
 }
-.row-rangkuman .username{
-    text-align: start;
-}
-.row-rangkuman .quote{
-    margin: 0;
-    font-size: 14px;
-}
-.row-rangkuman .point{
-    font-size: 30px;
+.rank{
     font-weight: 700;
-    color: var(--warna1);
-    margin-bottom: 140px;
+    font-size: 35px;
+    width: 70px;
 }
-.row-rangkuman .image-icon{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
+.profil-box:nth-child(3) .rank{
+    color: var(--warna9);
 }
-.row-rangkuman .image-icon img{
-    width: 100px;
+.profil-box:nth-child(4) .rank{
+    color: var(--warna10);
 }
-.row-rangkuman .profil-user p{
+.data-profil p{
     margin: 0;
+    text-align: start;
 }
-.gambar-point{
-    position: absolute;
-    left: 0;
-    bottom: -40px;
+.data-profil p:nth-child(1){
+    font-weight: 700;
 }
+/* .data-profil img{
+    width: 25px;
+} */
 /* ROW RANGKUMAN */
 
 /* ROW JUDUL TUGAS */
@@ -242,12 +226,6 @@ b{
         width: 190px;
         padding: 20px 0;
     }
-    .gambar-point{
-        width: 300px;
-    }
-    .row-rangkuman .point{
-        margin-bottom: 140px;
-    }
 }
 @media (max-width: 1199.98px) {
     .kartu{
@@ -258,30 +236,23 @@ b{
     .kartu p{
         font-size: 12px;
     }
-    .gambar-point{
-        position: absolute;
-        left: 5px;
-        bottom: -40px;
-        width: 260px;
-    }
-    .row-rangkuman .image-icon{
-        width: 35px;
-        height: 35px;
-    }
-    .row-rangkuman .image-icon img{
+    .rank{
+        font-weight: 700;
+        font-size: 25px;
         width: 50px;
     }
-    .row-rangkuman .point{
-        margin-bottom: 110px;
-        font-size: 22px;
-    }
-    .row-rangkuman .nama{
+    .data-profil p{
         font-size: 12px;
     }
-    .row-rangkuman .username{
+    .row-judul .kolom-kanan .button-intruksi{
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+    .row-judul .kolom-kanan .button-intruksi{
         font-size: 12px;
     }
-    .row-rangkuman .quote{
-        font-size: 12px;
+    .row-judul .kolom-kanan button img{
+        margin-right: 10px;
+        width: 20px;
     }
 }
