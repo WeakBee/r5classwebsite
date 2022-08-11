@@ -46,6 +46,9 @@ body{
     color: blue;
     margin-bottom: 5px;
 }
+.kontak a{
+    text-decoration: none;
+}
 .kontak .panahbawah{
     margin-bottom: 10px;
 }

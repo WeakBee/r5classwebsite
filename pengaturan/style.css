@@ -7,3 +7,53 @@ body{
     position: relative;
     padding: 30px 90px;
 }
+.row:not(.row-judul) {
+    border: 2px solid #47474750;
+    border-style: none;
+    border-top-style: solid;
+    padding: 10px 0;
+}
+
+.kolom-kiri p{
+    margin: 0;
+    color: var(--warna6);
+    font-size: 14px;
+}
+.kolom-kiri p:nth-child(1){
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.kolom-tengah {
+    display: flex;
+}
+.kolom-tengah img{
+    width: 120px;
+}
+
+.kolom-kanan {
+    display: flex;
+    justify-content: end;
+    align-items:flex-start;
+}
+.kolom-kanan .hapus{
+    background-color: transparent;
+    border: 1px solid var(--warna6);
+    color: var(--warna6);
+    margin-right: 10px;
+    padding: 10px 0;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.kolom-kanan .ubah{
+    background-color: var(--warna1);
+    border: none;
+    color: white;
+    padding: 10px 0;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
