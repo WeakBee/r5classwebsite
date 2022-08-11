@@ -57,7 +57,7 @@
         height: 70px;
         border-radius: 0 0 15px 15px;
         background-color: var(--warna1);
-        transition: 0.5s;
+        transition: height 0.5s;
     }
     .nav-bar div span{
         position: absolute;
