@@ -69,42 +69,36 @@
             <!-- KOLOM KIRI -->
             <div class="col-9 kolom-kiri">
                 <!-- WAKTU -->
-                <h3 class="greet">Selamat Pagi, Irsyad!</h3>
+                <h3 id="greeting"></h3>
                 <p id="time"></p>
+                <script>
+                    const hour = new Date().getHours();
+                    const greet = ["Selamat Pagi!", "Selamat Siang!", "Selamat Sore!", "Selamar Malam!"];
+                    let welcomeText = "";
 
-                <!-- <script>
-                    let now = new Date().toLocaleDateString('id', { weekday: "long", month: "long", day: "numeric" });
-                    document.getElementById("demo").innerHTML = (now);
-                </script> -->
+                    if (hour < 11) welcomeText = greet[0];
+                    else if (hour < 15) welcomeText = greet[1];
+                    else if (hour < 19) welcomeText = greet[2];
+                    else welcomeText = greet[3];
 
+                    greeting.innerHTML = welcomeText;
+                </script>
                 <script>
                     setInterval(myTimer, 500);
                     function myTimer() {
-                        var tw = new Date();
-                        if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
-                        else (a = tw.getTime());
-                        tw.setTime(a);
-                        // var tahun = tw.getFullYear();
-                        var hari = tw.getDay();
-                        var bulan = tw.getMonth();
-                        var tanggal = tw.getDate();
+                        var time = new Date();
+                        if (time.getTimezoneOffset() == 0) (a = time.getTime() + (7 * 60 * 60 * 1000))
+                        else (a = time.getTime());
+                        time.setTime(a);
+                        var hari = time.getDay();
+                        var bulan = time.getMonth();
+                        var tanggal = time.getDate();
                         var hariarray = new Array("Minggu,", "Senin,", "Selasa,", "Rabu,", "Kamis,", "Jum'at,", "Sabtu,");
                         var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
 
-                        document.getElementById("time").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + " | " + tw.toLocaleTimeString() + (" WIB ");
+                        document.getElementById("time").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + " | " + (time.getHours() < 10 ? "0" : "") + time.getHours() + ":" + (time.getMinutes() < 10 ? "0" : "") + time.getMinutes() + (" WIB ");
                     }
                 </script>
-
-                <!-- <script>
-                    setInterval(myTimer,500);
-
-                    function myTimer() {
-                    const d = new Date();
-                    document.getElementById("time").innerHTML = d.toLocaleTimeString();
-                    }
-                    
-                </script> -->
-                <!-- WAKTU -->
 
                 <!-- AKTIVITAS -->
                 <div class="aktivitas">
@@ -131,23 +125,21 @@
                     </div>
                 </div>
                 <!-- MATKUL -->
-                <div class="card" style="">
-                    <img src="./assets/Hubungi Kami/foto5.png" class="card-img-top">
+                <div class="card">
+                    <img src="./assets/Hubungi Kami/foto5.png">
                     <div class="content">
                         <h5 class="card-title">IMK</h5>
                         <p>08:00 - 10:00</p>
                         <p>Pertemuan 10</p>
                     </div>
-
                 </div>
-                <div class="card" style="">
-                    <img src="./assets/Hubungi Kami/foto5.png" class="card-img-top">
+                <div class="card">
+                    <img src="./assets/Hubungi Kami/foto5.png">
                     <div class="content">
                         <h5 class="card-title">IMK</h5>
                         <p>08:00 - 10:00</p>
                         <p>Pertemuan 10</p>
                     </div>
-
                 </div>
             </div>
             <!-- KOLOM KIRI -->
@@ -156,7 +148,7 @@
             <div class="col-3 kolom-kanan">
                 <h5 class="profile text-center">Profile</h5>
                 <div class="">
-                    <img src="./assets/Hubungi Kami/foto1.png" class="profile-image">
+                    <img src="./assets/default-profile.png" class="profile-image">
                 </div>
                 <div class="name">
                     <h4 class="text-center">Irsyad Sunarko</h4>
@@ -175,7 +167,7 @@
                         <li class="list-group-item">johan</li>
                     </ul>
                 </div>
-                <div class="button">
+                <div class="btn-setting">
                     <a href="./pengaturan/">
                         <button class="">Pengaturan</button>
                     </a>

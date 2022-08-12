@@ -71,14 +71,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.button{
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 .rank{
     background-color: var(--warna11);
     border-radius: 15px;
@@ -87,16 +79,8 @@ body {
     background-color: var(--warna11);
     border-radius: 15px;
 }
-button{
-    background-color: var(--warna1);
-    border-radius: 10px;
-    width: 250px;
-    color: white;
-    padding: 10px 25px;
-    border: none;
-}
 .leaderboard{
-    background-color: #EEEEEE;
+    background-color: none;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -110,10 +94,29 @@ button{
 .leaderboard .satu{
     background-color: var(--warna8);
 }
-.dua{
+.leaderboard .dua{
     background-color: var(--warna9);
 }
-.tiga{
+.leaderboard .tiga{
     background-color: var(--warna10);
+}
+.btn-setting{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button{
+    background-color: var(--warna1);
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+}
+button:hover{
+    background-color: var(--warna7);
 }
 /* KOLOM KANAN */
