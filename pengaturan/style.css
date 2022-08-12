@@ -30,8 +30,8 @@ input{
     border: 1px solid var(--warna6);
 }
 input:focus{
-    outline: 2px solid var(--warna1);
-  }
+    outline: 3px solid var(--warna1);
+}
 label{
     font-size: 12px;
     color: var(--warna6);
