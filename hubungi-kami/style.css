@@ -25,7 +25,7 @@ body{
     margin-bottom: 20px;
 }
 .meet{
-    color: blue;
+    color: var(--warna1);
     font-weight: 700;
 }
 .kontak{
@@ -43,11 +43,12 @@ body{
 .kontak div{
     text-align: start;
     font-size: 12px;
-    color: blue;
+    color: var(--warna1);
     margin-bottom: 5px;
 }
 .kontak a{
     text-decoration: none;
+    color: var(--warna1);
 }
 .kontak .panahbawah{
     margin-bottom: 10px;
