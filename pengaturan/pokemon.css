@@ -1,0 +1,39 @@
+.pokemon-icon[pokemon=none]{
+    content:url("../assets/starter-pokemon/egg.png");
+}
+.pokemon-icon[pokemon=abra]{
+    content:url("../assets/starter-pokemon/abra/63.png");
+}
+.pokemon-icon[pokemon=aron]{
+    content:url("../assets/starter-pokemon/aron/304.png");
+}
+.pokemon-icon[pokemon=axew]{
+    content:url("../assets/starter-pokemon/axew/610.png");
+}
+.pokemon-icon[pokemon=bulbasaur]{
+    content:url("../assets/starter-pokemon/bulbasaur/1.png");
+}
+.pokemon-icon[pokemon=charmander]{
+    content:url("../assets/starter-pokemon/charmander/4.png");
+}
+.pokemon-icon[pokemon=chikorita]{
+    content:url("../assets/starter-pokemon/chikorita/152.png");
+}
+.pokemon-icon[pokemon=chimchar]{
+    content:url("../assets/starter-pokemon/chimchar/390.png");
+}
+.pokemon-icon[pokemon=cyndaquil]{
+    content:url("../assets/starter-pokemon/cyndaquil/155.png");
+}
+.pokemon-icon[pokemon=deino]{
+    content:url("../assets/starter-pokemon/deino/633.png");
+}
+.pokemon-icon[pokemon=dratini]{
+    content:url("../assets/starter-pokemon/dratini/147.png");
+}
+.pokemon-icon[pokemon=gastly]{
+    content:url("../assets/starter-pokemon/gastly/92.png");
+}
+.pokemon-icon[pokemon=gible]{
+    content:url("../assets/starter-pokemon/gible/443.png");
+}

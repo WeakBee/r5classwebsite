@@ -9,4 +9,12 @@ $(document).ready(function(){
     $(".cancel-icon").click(function(){
         $('.kartu-icon').attr('pilih','no');
     });
+    $(".hapus").click(function(){
+        $('.pokemon-icon').attr('pokemon','none');
+    });
+    $(".ubah-icon").click(function(){
+        var pokemon=$(".kartu-icon[pilih=yes]").attr('pokemon');
+        $(".pokemon-icon").attr("pokemon", pokemon);
+    });
 });
+

@@ -54,6 +54,10 @@ label{
     font-size: 12px;
     color: var(--warna6);
 }
+.pokemon-icon{
+    content:url("../assets/starter-pokemon/egg.png");
+    width: 120px;
+}
 /* KOLOM TENGAH */
 
 /* +++++++++++===================++++++++++++ */
