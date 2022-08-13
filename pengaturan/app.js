@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $(".ubah").click(function(){
+      $(".pilih-icon").toggle();
+    });
+    $(".kartu-icon").click(function(){
+        $('.kartu-icon').attr('pilih','no');
+        $(this).attr('pilih','yes');
+    });
+    $(".cancel-icon").click(function(){
+        $('.kartu-icon').attr('pilih','no');
+    });
+});

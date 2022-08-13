@@ -62,95 +62,170 @@
                 </div>
             </a>
         </div>
+
         <div class="row row-judul">
             <h1>PENGATURAN</h1>
             <p>Ubah dan Lihat detail akun anda disini</p>
         </div>
         <div class="row row-icon">
             <div class="col-4 kolom-kiri">
-                <p>Icon Profil Anda</p>
+                <p>Profil Pokemon Anda</p>
                 <p>Ini akan di tampilkan di profil anda</p>
             </div>
             <div class="col-4 kolom-tengah">
-                <img src="../assets/starter pokemon/charmander/6.png">
+                <img src="../assets/starter pokemon/charmander/6.gif">
+                <p>Pokemon anda akan berevolusi seiring dengan peningkatan Poin</p>
             </div>
             <div class="col-4 kolom-kanan">
                 <button class="hapus">Hapus</button>
-                <button class="ubah">Ubah</button>
+                <button class="ubah">Pilih <img src="../assets/Pengaturan/Expand_down.png" width="15px"></button>
+                <div class="pilih-icon">
+                    <div class="dek-kartu">
+                        <div class="row-dekkartu">
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/abra/63.png">
+                                <p>Abra</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/aron/304.png">
+                                <p>Aron</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/axew/610.png">
+                                <p>Axew</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/bulbasaur/1.png">
+                                <p>Bulbasaur</p>
+                            </div>
+                        </div>
+                        <div class="row-dekkartu">
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/charmander/4.png">
+                                <p>Charmander</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/chikorita/152.png">
+                                <p>Chikorita</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/chimchar/390.png">
+                                <p>Chimchar</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/cyndaquil/155.png">
+                                <p>Cyndaquil</p>
+                            </div>
+                        </div>
+                        <div class="row-dekkartu">
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/deino/633.png">
+                                <p>Deino</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/dratini/147.png">
+                                <p>Dratini</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/gastly/92.png">
+                                <p>Gastly</p>
+                            </div>
+                            <div class="kartu-icon">
+                                <img src="../assets/starter pokemon/gible/443.png">
+                                <p>Gible</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ganti">
+                        <button class="cancel-icon">Cancel</button>
+                        <button class="ubah-icon">Ubah</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row row-nama">
-            <div class="col-4 kolom-kiri">
-                <p>Nama Lengkap</p>
-                <p>Ini akan di tampilkan di profil anda</p>
-            </div>
-            <div class="col-4 kolom-tengah">
-                <form action="">
+        <form action="" method="post">
+            <div class="row row-nama">
+                <div class="col-4 kolom-kiri">
+                    <p>Nama Lengkap</p>
+                    <p>Ini akan di tampilkan di profil anda</p>
+                </div>
+                <div class="col-4 kolom-tengah">
                     <label for="namaDepan">Nama Depan</label><br>
                     <input name="namaDepan" id="namaDepan" type="text" value="Irsyad"/>
                     <br>
                     <label for="namaBelakang">Nama Belakang</label><br>
                     <input name="namaBelakang" id="namaBelakang" type="text" value="Sunarko"/>
-                </form>
+                </div>
+                <div class="col-4 kolom-kanan">
+                </div>
             </div>
-            <div class="col-4 kolom-kanan">
-                <button class="ubah">Ubah</button>
+            <div class="row row-username">
+                <div class="col-4 kolom-kiri">
+                    <p>Username</p>
+                    <p>Ini akan di tampilkan di profil anda</p>
+                </div>
+                <div class="col-4 kolom-tengah">
+                    <input type="text" id="username" name="username" value="@aksara" disabled>
+                </div>
+                <div class="col-4 kolom-kanan">
+                </div>
             </div>
-        </div>
-        <div class="row row-username">
-            <div class="col-4 kolom-kiri">
-                <p>Username</p>
-                <p>Ini akan di tampilkan di profil anda</p>
+            <div class="row row-email">
+                <div class="col-4 kolom-kiri">
+                    <p>Email</p>
+                </div>
+                <div class="col-4 kolom-tengah">
+                    <input type="email" id="email" name="email" value="irsyadsunarkos@gmail.com"disabled>
+                </div>
+                <div class="col-4 kolom-kanan">
+                </div>
             </div>
-            <div class="col-4 kolom-tengah">
-                <input type="text" id="username" name="username" value="@aksara" disabled>
-            </div>
-            <div class="col-4 kolom-kanan">
-            </div>
-        </div>
-        <div class="row row-email">
-            <div class="col-4 kolom-kiri">
-                <p>Email</p>
-            </div>
-            <div class="col-4 kolom-tengah">
-                <input type="email" id="email" name="email" value="irsyadsunarkos@gmail.com"disabled>
-            </div>
-            <div class="col-4 kolom-kanan">
-            </div>
-        </div>
-        <div class="row row-password">
-            <div class="col-4 kolom-kiri">
-                <p>Password</p>
-            </div>
-            <div class="col-4 kolom-tengah">
-                <form action="">
+            <div class="row row-password">
+                <div class="col-4 kolom-kiri">
+                    <p>Password</p>
+                </div>
+                <div class="col-4 kolom-tengah">
                     <label for="oldPassword">Password Anda (Sekarang)</label><br>
                     <input type="password" id="oldPassword" name="oldPassword" value="testtstestsettestsete" disabled>
                     <br>
+                    <label for="oldsamePassword">Konfirmasi Password (jika ingin mengubah Password)</label><br>
+                    <input type="password" name="oldsamePassword" id="oldsamePassword"/>
+                    <br>
                     <label for="newPassword">Password Baru</label><br>
                     <input type="password" name="newPassword" id="newPassword"/>
-                </form>
+                </div>
+                <div class="col-4 kolom-kanan">
+                </div>
             </div>
-            <div class="col-4 kolom-kanan">
-                <button class="ubah">Ubah</button>
+            <div class="row row-nomor">
+                <div class="col-4 kolom-kiri">
+                    <p>Nomor Handphone</p>
+                </div>
+                <div class="col-4 kolom-tengah">
+                    <input type="text" id="nonegara" name="nonegara" value="+62"disabled size="1">
+                    <input type="tel" name="nomor" id="nomor" size="12" maxlength="12"/>
+                </div>
+                <div class="col-4 kolom-kanan">
+                </div>
             </div>
-        </div>
-        <div class="row row-nomor">
-            <div class="col-4 kolom-kiri">
-                <p>Nomor Handphone</p>
+            <div class="row row-simpan">
+                <div class="col-4 kolom-kiri">
+                </div>
+                <div class="col-4 kolom-tengah">
+                </div>
+                <div class="col-4 kolom-kanan">
+                    <button type="submit" name="simpan" class="simpan">Simpan</button>
+                </div>
             </div>
-            <div class="col-4 kolom-tengah">
-                <input type="text" id="nonegara" name="nonegara" value="+62"disabled size="1">
-                <input type="tel" name="nomor" id="nomor" size="12" maxlength="12"/>
-            </div>
-            <div class="col-4 kolom-kanan">
-                <button class="ubah">Ubah</button>
-            </div>
-        </div>
+        </form>
     </div>
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP JS -->
+    <script src="app.js"></script>
   </body>
 </html>

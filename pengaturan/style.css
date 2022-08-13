@@ -14,6 +14,9 @@ body{
     padding: 10px 0;
 }
 
+/* +++++++++++===================++++++++++++ */
+
+/* KOLOM KIRI */
 .kolom-kiri p{
     margin: 0;
     color: var(--warna6);
@@ -23,7 +26,11 @@ body{
     font-weight: 600;
     font-size: 18px;
 }
+/* KOLOM KIRI */
 
+/* +++++++++++===================++++++++++++ */
+
+/* KOLOM TENGAH */
 input{
     border-radius: 10px;
     padding: 3px 10px;
@@ -43,7 +50,15 @@ label{
 .kolom-tengah img{
     width: 120px;
 }
+.row-icon .kolom-tengah{
+    font-size: 12px;
+    color: var(--warna6);
+}
+/* KOLOM TENGAH */
 
+/* +++++++++++===================++++++++++++ */
+
+/* KOLOM KANAN */
 .kolom-kanan {
     display: flex;
     justify-content: end;
@@ -55,18 +70,104 @@ label{
     color: var(--warna6);
     margin-right: 10px;
     padding: 10px 0;
-    width: 120px;
-    border-radius: 20px;
+    width: 100px;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 14px;
 }
 .kolom-kanan .ubah{
-    background-color: var(--warna1);
-    border: none;
-    color: white;
-    padding: 10px 0;
-    width: 120px;
-    border-radius: 20px;
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 15px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
 }
+.kolom-kanan .ubah img{
+    margin-left: 5px;
+}
+.kolom-kanan .simpan{
+    background-color:var(--warna1);
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.kolom-kanan .pilih-icon{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 10px;
+    display: none;
+}
+.kolom-kanan .dek-kartu{
+    border: 2px solid black;
+    border-style: none;
+    border-bottom-style: solid;
+    height: 300px;
+    overflow-y: auto;
+}
+.kolom-kanan .row-dekkartu{
+    display: flex;
+}
+.kolom-kanan .ganti{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.kolom-kanan .kartu-icon{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.kolom-kanan .kartu-icon[pilih=no] {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+.kolom-kanan .kartu-icon[pilih=yes] {
+    border: 2px solid var(--warna1);
+}
+.kolom-kanan .kartu-icon img{
+    width: 80px;
+    height: 80px;
+}
+.kolom-kanan .kartu-icon p{
+    font-weight: 700;
+    font-size: 12px;
+}
+.kolom-kanan .cancel-icon{
+    background-color: transparent;
+    border: 1px solid var(--warna6);
+    color: var(--warna6);
+    margin-right: 10px;
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.kolom-kanan .ubah-icon{
+    background-color:var(--warna1);
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* KOLOM KANAN */
