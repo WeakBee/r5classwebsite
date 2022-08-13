@@ -13,6 +13,9 @@ body{
     border-top-style: solid;
     padding: 10px 0;
 }
+.row-judul h1{
+    font-weight: 700;
+}
 
 /* +++++++++++===================++++++++++++ */
 

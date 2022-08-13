@@ -37,3 +37,63 @@
 .pokemon-icon[pokemon=gible]{
     content:url("../assets/starter-pokemon/gible/443.png");
 }
+.pokemon-icon[pokemon=klink]{
+    content:url("../assets/starter-pokemon/klink/599.png");
+}
+.pokemon-icon[pokemon=larvitar]{
+    content:url("../assets/starter-pokemon/larvitar/246.png");
+}
+.pokemon-icon[pokemon=Lotad]{
+    content:url("../assets/starter-pokemon/Lotad/270.png");
+}
+.pokemon-icon[pokemon=mudkip]{
+    content:url("../assets/starter-pokemon/mudkip/258.png");
+}
+.pokemon-icon[pokemon=oshawott]{
+    content:url("../assets/starter-pokemon/oshawott/501.png");
+}
+.pokemon-icon[pokemon=piplup]{
+    content:url("../assets/starter-pokemon/piplup/393.png");
+}
+.pokemon-icon[pokemon=poliwag]{
+    content:url("../assets/starter-pokemon/poliwag/60.png");
+}
+.pokemon-icon[pokemon=ralts]{
+    content:url("../assets/starter-pokemon/ralts/280.png");
+}
+.pokemon-icon[pokemon=shinx]{
+    content:url("../assets/starter-pokemon/shinx/403.png");
+}
+.pokemon-icon[pokemon=snivy]{
+    content:url("../assets/starter-pokemon/snivy/495.png");
+}
+.pokemon-icon[pokemon=spheal]{
+    content:url("../assets/starter-pokemon/spheal/363.png");
+}
+.pokemon-icon[pokemon=squirtle]{
+    content:url("../assets/starter-pokemon/squirtle/7.png");
+}
+.pokemon-icon[pokemon=starly]{
+    content:url("../assets/starter-pokemon/starly/396.png");
+}
+.pokemon-icon[pokemon=tepig]{
+    content:url("../assets/starter-pokemon/tepig/498.png");
+}
+.pokemon-icon[pokemon=torchic]{
+    content:url("../assets/starter-pokemon/torchic/255.png");
+}
+.pokemon-icon[pokemon=totodile]{
+    content:url("../assets/starter-pokemon/totodile/158.png");
+}
+.pokemon-icon[pokemon=Treecko]{
+    content:url("../assets/starter-pokemon/Treecko/252.png");
+}
+.pokemon-icon[pokemon=turtwig]{
+    content:url("../assets/starter-pokemon/turtwig/387.png");
+}
+.pokemon-icon[pokemon=vanillite]{
+    content:url("../assets/starter-pokemon/vanillite/582.png");
+}
+.pokemon-icon[pokemon=wurmple]{
+    content:url("../assets/starter-pokemon/wurmple/265.png");
+}
