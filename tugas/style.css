@@ -256,3 +256,58 @@ b{
         width: 20px;
     }
 }
+@media (max-width: 991.98px) { 
+    .row{
+        padding: 20px 0 ;
+        text-align: center;
+    }
+    .row-judul{
+        padding: 100px 0 30px 0 ;
+    }
+    .row-judul .kolom-kanan {
+        justify-content: center;
+    }
+    .row-rangkuman .row-inside-rangkuman {
+        padding: 30px 10px;
+        display: block;
+    }
+    .judul-rangkuman {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dek-kartu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .kartu {
+        margin: 0 5px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    }
+    .row-rangkuman .kolom-kanan {
+        border: none;
+        padding: 0;
+    }
+    .row-judul-tugas .kolom-kanan {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .row-tugas {
+        padding: 10px;
+    }
+    .tugas-matkul {
+        display: block;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+    .sub-tugas, .sub-tugas:nth-child(1), .sub-tugas:nth-child(5) {
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+    .sub-tugas:nth-child(5) {
+        justify-content: center;
+    }
+}

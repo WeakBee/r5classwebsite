@@ -175,3 +175,32 @@ label{
     font-size: 14px;
 }
 /* KOLOM KANAN */
+
+@media (max-width: 991.98px) { 
+    .container {
+        padding: 100px 8vw 30px 8vw;
+    }
+    .row{
+        text-align: center;
+    }
+    .kolom-kanan {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .kolom-kanan .pilih-icon {
+        width: 90vw;
+    }
+    .kolom-kanan .dek-kartu {
+        overflow: auto;
+    }
+    .kolom-kanan .row-dekkartu {
+        display: block;
+    }
+    .kolom-kanan .ganti {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

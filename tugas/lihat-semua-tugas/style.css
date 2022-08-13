@@ -82,3 +82,27 @@ h1{
     border: none;
     border-radius: 10px;
 }
+
+@media (max-width: 991.98px) { 
+    .row {
+        padding: 10px;
+        text-align: center;
+    }
+    .tugas-matkul {
+        display: block;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+    .sub-tugas, .sub-tugas:nth-child(1),.row-tugas-kelompok .ngerjain, .sub-tugas:nth-child(5) {
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+    .ngerjain {
+        display: flex;
+        justify-content: center;
+    }
+    .sub-tugas:nth-child(5) {
+        justify-content: center;
+    }
+}
