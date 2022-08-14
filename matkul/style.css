@@ -4,7 +4,6 @@ body{
 .container{
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
-    position: relative;
     padding: 30px 90px;
 }
 .row-judul{
@@ -74,4 +73,38 @@ body{
 .jam-matkul{
     font-size: 12px;
     color: black;
+}
+
+@media (max-width: 991.98px) { 
+    .container {
+        padding: 100px 0 30px 0;
+    }
+    .row{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 0 30px 0;
+    }
+    .row-judul .kolom-kiri{
+        display: block;
+    }
+    .row-judul .kolom-kanan{
+        display: block;
+    }
+    .row-card-matkul .col-12{
+        display: block;
+        padding: 0 30px;
+    }
+    .card-matkul{
+        background-color: var(--warna2);
+        height: auto;
+        width: auto;
+        padding: 20px 20px;
+        border-radius: 15px;
+        margin: 0 0 30px 0;
+        transition: 0.5s;
+    }
+    .card-matkul:hover{
+        transform: scale(1.1);
+    }
 }
