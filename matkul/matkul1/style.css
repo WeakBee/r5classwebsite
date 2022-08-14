@@ -29,3 +29,8 @@ body{
 .row-judul .kolom-kanan p{
     margin: 0;
 }
+
+.card{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
