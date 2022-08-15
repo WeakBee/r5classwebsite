@@ -1,3 +1,15 @@
+<?php 
+    require '../functions.php';
+    // ambil data dengan query
+    $tugas = query("SELECT * FROM tugas");
+    $tugasAktif = query("SELECT * FROM tugas WHERE Status='aktif'");
+    $tugasKelompok = query("SELECT * FROM tugas WHERE Status='kelompok'");
+    $tugasNon = query("SELECT * FROM tugas WHERE Status='non'");
+
+    $total = mysqli_num_rows($tugas);
+    $totalKelompok = mysqli_num_rows($tugasKelompok);
+    $totalSelesai = mysqli_num_rows($tugasNon);
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -68,7 +80,7 @@
                 <p>Pastikan anda telah membaca instruksi atau petunjuk pengerjaan tugas ,sebelum membuka dokumen tugas yang tersedia di bawah agar tidak menyulitkan yang lain</p>
             </div>
             <div class="col-lg kolom-kanan">
-                <a href="./instruksi-tugas/"><button class="button-intruksi"><img src="../assets/Tugas/archives_group_docks.png"> Instruksi Pengerjaan Tugas</button></a>
+                <button class="button-intruksi"><img src="../assets/Tugas/archives_group_docks.png"> Instruksi Pengerjaan Tugas</button>
             </div>
         </div>
         <div class="row row-rangkuman">
@@ -79,17 +91,17 @@
                         <div class="kartu kartu1">
                             <img src="../assets/Tugas/paper.png">
                             <p>Total<br>Tugas</p>
-                            <h1>72</h1>
+                            <h1><?= $total?></h1>
                         </div>
                         <div class="kartu kartu2">
                             <img src="../assets/Tugas/group.png">
                             <p>Tugas<br>Kelompok</p>
-                            <h1>5</h1>
+                            <h1><?= $totalKelompok?></h1>
                         </div>
                         <div class="kartu kartu3">
                             <img src="../assets/Tugas/checklist.png">
                             <p>Tugas<br>Terselesaikan</p>
-                            <h1>65</h1>
+                            <h1><?= $totalSelesai?></h1>
                         </div>
                     </div>
                 </div>
@@ -143,75 +155,31 @@
             </div>
         </div>
         <div class="row row-tugas">
-            <div class="col-12 tugas-matkul">
+            <?php foreach( $tugasAktif as $row) : ?>
+                <div class="col-12 tugas-matkul">
                 <div class="matkul sub-tugas">
-                    <p><b>Keamanan Komputer</b></p>
-                    <p>Tugas 3 | 5 Soal</p>
+                    <p><b><?= $row['Matkul'] ?> </b></p>
+                    <p><?= $row['Keterangan'] ?></p>
                 </div>
                 <div class="diberikan sub-tugas">
                     <p>Diberikan :</p>
-                    <p><b>5 September</b></p>
+                    <p><b><?= $row['Diberikan'] ?></b></p>
                 </div>
                 <div class="dikumpulkan sub-tugas">
                     <p>Dikumpulkan :</p>
-                    <p><b>10 September</b></p>
+                    <p><b><?= $row['Dikumpulkan'] ?></b></p>
                 </div>
                 <div class="selesai sub-tugas">
-                    <p><b>30%</b> Selesai</p>
+                    <p><b><?= $row['Persentase'] ?>%</b> Selesai</p>
                     <div class="persentase">
-                        <div class="fill" style="width: 30%;"></div>
+                        <div class="fill" style="width: <?= $row['Persentase'] ?>%;"></div>
                     </div>
                 </div>
                 <div class="ngerjain sub-tugas">
-                    <button><img src="../assets/Tugas/edit.png"> Ngerjain Kuy</button>
+                    <a href="<?= $row['Link'] ?>"><button><img src="../assets/Tugas/edit.png"> Ngerjain Kuy</button></a>
                 </div>
             </div>
-            <div class="col-12 tugas-matkul">
-                <div class="matkul sub-tugas">
-                    <p><b>Rekayasa Perangkat Lunak</b></p>
-                    <p>Tugas 3 | 5 Soal</p>
-                </div>
-                <div class="diberikan sub-tugas">
-                    <p>Diberikan :</p>
-                    <p><b>5 September</b></p>
-                </div>
-                <div class="dikumpulkan sub-tugas">
-                    <p>Dikumpulkan :</p>
-                    <p><b>10 September</b></p>
-                </div>
-                <div class="selesai sub-tugas">
-                    <p><b>80%</b> Selesai</p>
-                    <div class="persentase">
-                        <div class="fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="ngerjain sub-tugas">
-                    <button><img src="../assets/Tugas/edit.png"> Ngerjain Kuy</button>
-                </div>
-            </div>
-            <div class="col-12 tugas-matkul">
-                <div class="matkul sub-tugas">
-                    <p><b>Sistem Berbasis Pengetahuan</b></p>
-                    <p>Tugas 3 | 5 Soal</p>
-                </div>
-                <div class="diberikan sub-tugas">
-                    <p>Diberikan :</p>
-                    <p><b>5 September</b></p>
-                </div>
-                <div class="dikumpulkan sub-tugas">
-                    <p>Dikumpulkan :</p>
-                    <p><b>10 September</b></p>
-                </div>
-                <div class="selesai sub-tugas">
-                    <p><b>100%</b> Selesai</p>
-                    <div class="persentase">
-                        <div class="fill" style="width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="ngerjain sub-tugas">
-                    <button><img src="../assets/Tugas/edit.png"> Ngerjain Kuy</button>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 

@@ -1,0 +1,11 @@
+body{
+    background-color: var(--warna3) ;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    position: relative;
+}
+.row{
+    padding: 30px 40px 0 90px;
+}
