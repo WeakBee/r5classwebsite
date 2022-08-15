@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+u{
+    text-decoration: underline solid blue;
+}
+
 /* KOLOM KIRI */
 .kolom-kiri {
     padding: 30px 0 0 80px;
@@ -83,6 +87,7 @@ body {
     background-color: none;
     border-radius: 15px;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 .leaderboard li{
     background-color: transparent;
