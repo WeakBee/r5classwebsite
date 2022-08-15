@@ -1,4 +1,4 @@
-body{
+.body{
     background-color: var(--warna3) ;
 }
 .container{
@@ -33,4 +33,104 @@ body{
 .card{
     border-radius: 15px;
     margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--warna3) ;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    position: relative;
+    padding-top: 20px;
+}
+.row{
+    padding: 15px 40px 0 40px;
+}
+h1{
+    font-weight: 600;
+    margin: 0;
+    font-size: 35px;
+}
+
+.row-tugas-aktif{
+    margin-top: 20px;
+}
+.ket-judul{
+    color: var(--warna6);
+    font-size: 14px;
+}
+.tugas-matkul{
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+.sub-tugas{
+    width: 20%;
+}
+.matkul{
+    width: 35%;
+}
+.ngerjain{
+    width: 25%;
+}
+.row-tugas-kelompok .ngerjain{
+    width: 45%;
+}
+.sub-tugas p{
+    margin: 0;
+}
+.persentase{
+    width: 100%;
+    height: 10px;
+    background-color: var(--warna11);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fill{
+    background-color: var(--warna1);
+    height: 100%;
+}
+.ngerjain{
+    display: flex;
+    justify-content: end;
+}
+.ngerjain button{
+    background-color: var(--warna1);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 991.98px) { 
+    .row {
+        padding: 10px;
+        text-align: center;
+    }
+    .tugas-matkul {
+        display: block;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+    .sub-tugas, .sub-tugas:nth-child(1),.row-tugas-kelompok .ngerjain, .sub-tugas:nth-child(5) {
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+    .ngerjain {
+        display: flex;
+        justify-content: center;
+    }
+    .sub-tugas:nth-child(5) {
+        justify-content: center;
+    }
 }
