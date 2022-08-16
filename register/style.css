@@ -55,7 +55,13 @@ body{
 /* KOLOM KANAN */
 .kolom-kanan{
     background-color: var(--warna5);
-    padding: 20px 40px;
+    padding: 20px 60px;
+}
+.keterangan{
+    font-size: 12px;
+}
+.frm h3{
+    font-weight: 700;
 }
 .form-group {
 	border-radius: 15px;
@@ -86,6 +92,10 @@ body{
     user-select:none;
     -moz-user-select:none;
     cursor: pointer;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
 }
 .btn{
 	width: 100%;
@@ -95,6 +105,7 @@ body{
 	border-radius: 10px;
     font-weight: 600;
 	color: #FFFFFF;
+    margin-bottom: 30px;
 }
 .btn:hover {
 	cursor: pointer;
