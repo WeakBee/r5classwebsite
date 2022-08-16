@@ -20,7 +20,7 @@ body{
 /* KOLOM KIRI */
 .kolom-kiri{
     background-color: var(--warna1);
-    padding: 10px;
+    padding: 30px 0 30px 0;
     color: white;
 }
 .kembali{
@@ -36,17 +36,67 @@ body{
     padding: 0 30px;
     margin-top: 30px;
 }
+.keterangan{
+    padding: 0px 10px 0px 10px;
+    
+}
 .gambar{
-    background-color: rgba(255, 255, 255, 0.164);
-    border-radius: 10px;
-    padding: 15px;
     margin-right: 10px;
 }
+.gambar img{
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+}
 /* KOLOM KIRI */
+
 
 /* KOLOM KANAN */
 .kolom-kanan{
     background-color: var(--warna5);
     padding: 20px 40px;
+}
+.form-group {
+	border-radius: 15px;
+	border:1px;
+}
+.form-group .input-control {
+    margin-bottom: 10px;
+	padding: 10px 15px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size:15px;
+	border-radius: 15px;
+	border:1px solid;
+}
+.ckls-box{
+    display: flex;
+    align-items: center;
+}
+#ckls{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.ckls-label{
+    font-weight: 600;
+	font-size: 15px;
+    user-select:none;
+    -moz-user-select:none;
+    cursor: pointer;
+}
+.btn{
+	width: 100%;
+	padding:10px;
+	font-size:15px;
+	background-color: #2A41F8;
+	border-radius: 10px;
+    font-weight: 600;
+	color: #FFFFFF;
+}
+.btn:hover {
+	cursor: pointer;
 }
 /* KOLOM KANAN */
