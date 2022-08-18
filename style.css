@@ -1,3 +1,11 @@
+@-moz-document url-prefix() {
+    .scroll {
+        scrollbar-width: thin;
+        overflow-y: scroll;
+        scrollbar-color: var(--warna1) white;
+    }
+}
+
 body {
     background-color: var(--warna3);
 }
@@ -15,48 +23,69 @@ body {
     margin: 0;
 }
 
-u{
-    text-decoration: underline solid blue;
+u {
+    text-decoration: underline solid var(--warna1);
 }
 
 /* KOLOM KIRI */
 .kolom-kiri {
     padding: 30px 0 0 80px;
 }
+
+.poin {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.judul {
+    font-weight: 700;
+}
+
 .list {
     background-color: var(--warna2);
     border-radius: 15px;
     margin: 15px 10px 15px 0;
     padding: 15px;
 }
-.scroll{
+
+.scroll {
     height: 210px;
     overflow-y: scroll;
     margin-bottom: 30px;
 }
-.scroll::-webkit-scrollbar{
+
+.scroll::-webkit-scrollbar {
     width: 9px;
     height: 100px;
 }
-.scroll::-webkit-scrollbar-track{
+
+.scroll::-webkit-scrollbar-track {
     background-color: none;
-    
+
 }
-.scroll::-webkit-scrollbar-thumb{
+
+.scroll::-webkit-scrollbar-thumb {
     background: var(--warna1);
     border-radius: 10px;
 }
-.scroll::-webkit-scrollbar-thumb:hover{
+
+.scroll::-webkit-scrollbar-thumb:hover {
     background-color: var(--warna7)
 }
-.card{
-    margin-bottom: 20px;
+
+.card {
     width: 10rem;
+    margin: 0px 15px 20px 15px;
 }
-.content{
+
+.card .content {
     position: absolute;
-    color:aliceblue;
+    color: aliceblue;
+    bottom: 0;
+    background-color: (var(--warna1).5);
+    width: 100%;
 }
+
 /* KOLOM KIRI */
 
 /* KOLOM KANAN */
@@ -65,47 +94,59 @@ u{
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05) inset;
     position: relative;
 }
-.profile{
+
+.profile {
     margin-top: 30px;
 }
-.profile-image{
+
+.profile-image {
     border-radius: 50%;
     width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.rank{
+
+.rank {
     background-color: var(--warna11);
     border-radius: 15px;
 }
-.list-group{
+
+.list-group {
     background-color: var(--warna11);
     border-radius: 15px;
 }
-.leaderboard{
+
+.leaderboard {
     background-color: none;
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 100px;
 }
-.leaderboard li{
+
+.leaderboard li {
     background-color: transparent;
     border: 0;
 }
-.list-group-item.disabled, .list-group-item:disabled {
+
+.list-group-item.disabled,
+.list-group-item:disabled {
     background-color: transparent;
 }
-.leaderboard .satu{
+
+.leaderboard .satu {
     background-color: var(--warna8);
 }
-.leaderboard .dua{
+
+.leaderboard .dua {
     background-color: var(--warna9);
 }
-.leaderboard .tiga{
+
+.leaderboard .tiga {
     background-color: var(--warna10);
 }
-.btn-setting{
+
+.btn-setting {
     position: absolute;
     bottom: 25px;
     left: 0;
@@ -113,7 +154,8 @@ u{
     justify-content: center;
     width: 100%;
 }
-button{
+
+button {
     background-color: var(--warna1);
     border-radius: 10px;
     width: 250px;
@@ -121,7 +163,9 @@ button{
     padding: 10px 25px;
     border: none;
 }
-button:hover{
+
+button:hover {
     background-color: var(--warna7);
 }
+
 /* KOLOM KANAN */
