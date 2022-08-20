@@ -41,6 +41,7 @@ body{
     background-position: 0 -500px;
     background-repeat: no-repeat;
     border-radius: 15px;
+    margin: 15px 10px 15px 0;
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -54,5 +55,6 @@ body{
 }
 .card-meet-keterangan p{
     margin: 0;
+    font-size: 25px;
 }
 /* ROW MEET */
