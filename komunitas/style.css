@@ -31,17 +31,23 @@ body{
 .card-motivasi{
     background-color: var(--warna1);
     color: white;
+    font-size: 35px;
 }
 /* ROW MOTIVASI */
 
 /* ROW MEET */
+.row-row-meet{
+    height: 800px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
 .card-meet{
     background: url(../assets/Komunitas/rkuliah.jpg);
     background-size: cover;
     background-position: 0 -500px;
     background-repeat: no-repeat;
     border-radius: 15px;
-    margin: 15px 10px 15px 0;
+    margin: 15px 10px 50px 0;
     position: relative;
     overflow: hidden;
     padding: 0;
