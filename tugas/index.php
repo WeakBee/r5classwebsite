@@ -1,10 +1,10 @@
 <?php 
     require '../functions.php';
     // ambil data dengan query
-    $tugas = query("SELECT * FROM tugas");
-    $tugasAktif = query("SELECT * FROM tugas WHERE Status='aktif'");
-    $tugasKelompok = query("SELECT * FROM tugas WHERE Status='kelompok'");
-    $tugasNon = query("SELECT * FROM tugas WHERE Status='non'");
+    $tugas = query("SELECT * FROM data_tugas");
+    $tugasAktif = query("SELECT * FROM data_tugas WHERE Status='aktif' ORDER BY id DESC");
+    $tugasKelompok = query("SELECT * FROM data_tugas WHERE Status='kelompok'");
+    $tugasNon = query("SELECT * FROM data_tugas WHERE Status='non'");
 
     $total = mysqli_num_rows($tugas);
     $totalKelompok = mysqli_num_rows($tugasKelompok);

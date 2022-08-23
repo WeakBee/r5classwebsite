@@ -12,7 +12,9 @@ body{
 b{
     font-weight: 600;
 }
-
+a{
+    text-decoration: none;
+}
 /* ROW JUDUL */
 .row-judul .kolom-kanan{
     display: flex;

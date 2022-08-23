@@ -1,9 +1,9 @@
 <?php 
     require '../../functions.php';
     // ambil data dengan query
-    $tugasAktif = query("SELECT * FROM tugas WHERE Status='aktif'");
-    $tugasKelompok = query("SELECT * FROM tugas WHERE Status='kelompok'");
-    $tugasNon = query("SELECT * FROM tugas WHERE Status='non'");
+    $tugasAktif = query("SELECT * FROM data_tugas WHERE Status='aktif'ORDER BY id DESC");
+    $tugasKelompok = query("SELECT * FROM data_tugas WHERE Status='kelompok'ORDER BY id DESC");
+    $tugasNon = query("SELECT * FROM data_tugas WHERE Status='non'ORDER BY id DESC");
 ?>
 <!doctype html>
 <html lang="en">

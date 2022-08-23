@@ -28,12 +28,13 @@ u {
 
 /* KOLOM KIRI */
 .kolom-kiri {
-    padding: 30px 0 0 80px;
+    padding: 30px 10px 0 80px;
     background-color: white;
 }
 .poin {
     font-weight: 600;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .judul {
@@ -44,7 +45,7 @@ u {
 .list {
     background-color: var(--warna2);
     border-radius: 15px;
-    margin: 15px 10px 15px 0;
+    margin: 0px 10px 15px 0;
     padding: 15px;
 }
 
@@ -80,6 +81,16 @@ u {
     border: 0;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
 }
 
 .content {
@@ -116,6 +127,25 @@ u {
 .stats {
     background-color: var(--warna11);
     border-radius: 15px;
+    padding: 15px;
+}
+
+.stats-judul{
+    font-weight: 500;
+    color: var(--warna6);
+    margin-bottom: 5px;
+}
+.stats-judul div{
+    width: 33%;
+    text-align: center;
+}
+
+.stats-angka{
+    font-weight: 700;
+}
+.stats-angka div{
+    width: 33%;
+    text-align: center;
 }
 
 .leaderboard {
@@ -123,10 +153,16 @@ u {
     background-color: var(--warna11);
     border-radius: 15px;
 }
+.leaderboard h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+}
 
 .rank{
     width: 20%;
     font-weight: 500;
+    text-align: center;
 }
 .user{
     width: 50%;
@@ -137,14 +173,17 @@ u {
 
 .satu {
     background-color: var(--warna8);
+    font-weight: 700;
 }
 
 .dua {
     background-color: var(--warna9);
+    font-weight: 700;
 }
 
 .tiga {
     background-color: var(--warna10);
+    font-weight: 700;
 }
 
 

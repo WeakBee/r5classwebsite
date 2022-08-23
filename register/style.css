@@ -110,4 +110,34 @@ a{
 .btn:hover {
 	cursor: pointer;
 }
+.nama{
+    width: 49% !important;
+}
 /* KOLOM KANAN */
+@media (max-width: 991.98px) { 
+    .container{
+        height: auto;
+        padding: 0;
+    }
+    .nama{
+        width: 100% !important;
+    }
+    .penjelasan{
+        display: block;
+        text-align: center;
+    }
+    .gambar{
+        margin-bottom: 10px;
+    }
+    .kolom-kanan {
+        padding: 20px 20px;
+    }
+    .frm h3 {
+        font-weight: 700;
+        text-align: center;
+    }
+    .keterangan {
+        font-size: 12px;
+        text-align: center;
+    }
+}

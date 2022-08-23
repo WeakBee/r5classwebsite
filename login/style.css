@@ -110,3 +110,15 @@ input:focus{
 	border-radius: 15px;
 }
 /* ALERT (BLM KEPAKE) */
+
+@media (max-width: 992px) { 
+	.container{
+		padding: 0;
+	}
+	.login-box {
+		border-radius: 0px;
+		width: 100%;
+		height: 100%;
+		padding: 50px 30px;
+	}
+}
