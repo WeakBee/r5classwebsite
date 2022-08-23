@@ -26,12 +26,18 @@ body{
     justify-content: center;
 }
 .row-motivasi .center-row{
-    width: auto;
+    width: 80%;
 }
 .card-motivasi{
     background-color: var(--warna1);
     color: white;
-    font-size: 35px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.nyumbang{
+    text-align: center;
 }
 /* ROW MOTIVASI */
 
