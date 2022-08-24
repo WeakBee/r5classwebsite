@@ -124,8 +124,12 @@ u {
     margin-right: auto;
 }
 
+.name{
+    margin-top:20px;
+}
+
 .stats {
-    background-color: var(--warna11);
+    background-color: var(--warna12);
     border-radius: 15px;
     padding: 15px;
 }
@@ -150,7 +154,7 @@ u {
 
 .leaderboard {
     margin-bottom: 100px;
-    background-color: var(--warna11);
+    background-color: var(--warna12);
     border-radius: 15px;
 }
 .leaderboard h5{
@@ -206,7 +210,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--warna7);
+    background-color: var(--warna2);
+    color: var(--warna7);
 }
 
 /* KOLOM KANAN */
