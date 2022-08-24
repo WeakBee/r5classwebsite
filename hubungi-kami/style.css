@@ -21,6 +21,22 @@ body{
 .card:hover .kontak{
     bottom: 0;
 }
+.card .background-black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.card:hover .background-black{
+    opacity: 0.2;
+}
+.card img{
+    border-radius: 15px;
+}
 .judul{
     margin-bottom: 20px;
 }
