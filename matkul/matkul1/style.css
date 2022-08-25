@@ -135,3 +135,6 @@ h1{
         justify-content: center;
     }
 }
+.tab-pane{
+    padding-top: 20px;
+}
