@@ -47,6 +47,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
     position: relative;
     padding-top: 20px;
+    min-height: 100vh;
 }
 h1{
     font-weight: 600;

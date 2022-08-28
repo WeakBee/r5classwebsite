@@ -7,8 +7,13 @@
     $tugasNon = query("SELECT * FROM data_tugas WHERE Status='non'");
 
     $total = mysqli_num_rows($tugas);
+    $totalaktif = mysqli_num_rows($tugasAktif);
     $totalKelompok = mysqli_num_rows($tugasKelompok);
     $totalSelesai = mysqli_num_rows($tugasNon);
+
+    if ($totalaktif == '0'){
+        $tugasaktifkosong = true;
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,43 +38,43 @@
             </div>
             <a href="../">
                 <div>
-                    <img src="../assets/Navbar/dashboard.png">
+                    <img src="../assets/Navbar/dashboard.svg">
                     <span>Dashboard</span>
                 </div>
             </a>
             <a href="../komunitas/">
                 <div>
-                    <img src="../assets/Navbar/komunitas.png">
+                    <img src="../assets/Navbar/komunitas.svg">
                     <span>Komunitas</span>
                 </div>
             </a>
             <a href="../tugas/">
                 <div>
-                    <img src="../assets/Navbar/tugas.png">
+                    <img src="../assets/Navbar/tugas.svg">
                     <span>Tugas</span>
                 </div>
             </a>
             <a href="../hubungi-kami/">
                 <div>
-                    <img src="../assets/Navbar/hubungikami.png">
+                    <img src="../assets/Navbar/hubungikami.svg">
                     <span>Hubungi Kami</span>
                 </div>
             </a>
             <a href="../pengaturan/">
                 <div>
-                    <img src="../assets/Navbar/pengaturan.png">
+                    <img src="../assets/Navbar/pengaturan.svg">
                     <span>Pengaturan</span>
                 </div>
             </a>
             <a href="../matkul/">
                 <div>
-                    <img src="../assets/Navbar/matkul.png">
+                    <img src="../assets/Navbar/matkul.svg">
                     <span>Kelas</span>
                 </div>
             </a>
             <a href="../login/">
                 <div>
-                    <img src="../assets/Navbar/Sign_out_squre.png">
+                    <img src="../assets/Navbar/Sign_out_squre.svg">
                     <span>Logout</span>
                 </div>
             </a>
@@ -80,26 +85,26 @@
                 <p>Pastikan anda telah membaca instruksi atau petunjuk pengerjaan tugas ,sebelum membuka dokumen tugas yang tersedia di bawah agar tidak menyulitkan yang lain</p>
             </div>
             <div class="col-lg kolom-kanan">
-                <button class="button-intruksi"><img src="../assets/Tugas/archives_group_docks.png"> Instruksi Pengerjaan Tugas</button>
+                <button class="button-intruksi"><img src="../assets/Tugas/Arhives_group_docks.svg"> Instruksi Pengerjaan Tugas</button>
             </div>
         </div>
         <div class="row row-rangkuman">
             <div class="row-inside-rangkuman">
                 <div class="kolom-kiri">
-                    <div class="judul-rangkuman"><img src="../assets/Tugas/desk_alt.png"><span>Rangkuman Estimasi Tugas</span></div>
+                    <div class="judul-rangkuman"><img src="../assets/Tugas/Desk_alt.svg"><span>Rangkuman Estimasi Tugas</span></div>
                     <div class="dek-kartu">
                         <div class="kartu kartu1">
-                            <img src="../assets/Tugas/paper.png">
+                            <img src="../assets/Tugas/paper.svg">
                             <p>Total<br>Tugas</p>
                             <h1><?= $total?></h1>
                         </div>
                         <div class="kartu kartu2">
-                            <img src="../assets/Tugas/group.png">
+                            <img src="../assets/Tugas/group.svg">
                             <p>Tugas<br>Kelompok</p>
                             <h1><?= $totalKelompok?></h1>
                         </div>
                         <div class="kartu kartu3">
-                            <img src="../assets/Tugas/checklist.png">
+                            <img src="../assets/Tugas/checklist.svg">
                             <p>Tugas<br>Terselesaikan</p>
                             <h1><?= $totalSelesai?></h1>
                         </div>
@@ -151,35 +156,42 @@
                 <p>Tugas yang belum melewati batas akhir pengumpulan (Deadline)</p>
             </div>
             <div class="col-lg-4 kolom-kanan">
-                <a href="./lihat-semua-tugas/">Lihat Semua Tugas <img src="../assets/Tugas/Expand_right.png"></a>
+                <a href="./lihat-semua-tugas/">Lihat Semua Tugas <img src="../assets/Tugas/Expand_right.svg"></a>
             </div>
         </div>
         <div class="row row-tugas">
-            <?php foreach( $tugasAktif as $row) : ?>
-                <div class="col-12 tugas-matkul">
-                <div class="matkul sub-tugas">
-                    <p><b><?= $row['Matkul'] ?> </b></p>
-                    <p><?= $row['Keterangan'] ?></p>
+            <?php if(isset($tugasaktifkosong)) :  ?>
+                <div class="col-12 tugas-matkul-kosong">
+                    <h3>Tugas Belum Tersedia</h3>
                 </div>
-                <div class="diberikan sub-tugas">
-                    <p>Diberikan :</p>
-                    <p><b><?= $row['Diberikan'] ?></b></p>
-                </div>
-                <div class="dikumpulkan sub-tugas">
-                    <p>Dikumpulkan :</p>
-                    <p><b><?= $row['Dikumpulkan'] ?></b></p>
-                </div>
-                <div class="selesai sub-tugas">
-                    <p><b><?= $row['Persentase'] ?>%</b> Selesai</p>
-                    <div class="persentase">
-                        <div class="fill" style="width: <?= $row['Persentase'] ?>%;"></div>
+            <?php endif; ?>
+            <?php if(!isset($tugasaktifkosong)) : ?>
+                <?php foreach( $tugasAktif as $row) : ?>
+                    <div class="col-12 tugas-matkul">
+                        <div class="matkul sub-tugas">
+                            <p><b><?= $row['Matkul'] ?> </b></p>
+                            <p><?= $row['Keterangan'] ?></p>
+                        </div>
+                        <div class="diberikan sub-tugas">
+                            <p>Diberikan :</p>
+                            <p><b><?= $row['Diberikan'] ?></b></p>
+                        </div>
+                        <div class="dikumpulkan sub-tugas">
+                            <p>Dikumpulkan :</p>
+                            <p><b><?= $row['Dikumpulkan'] ?></b></p>
+                        </div>
+                        <div class="selesai sub-tugas">
+                            <p><b><?= $row['Persentase'] ?>%</b> Selesai</p>
+                            <div class="persentase">
+                                <div class="fill" style="width: <?= $row['Persentase'] ?>%;"></div>
+                            </div>
+                        </div>
+                        <div class="ngerjain sub-tugas">
+                            <a href="<?= $row['Link'] ?>"><button><img src="../assets/Tugas/Edit.svg"> Ngerjain Kuy</button></a>
+                        </div>
                     </div>
-                </div>
-                <div class="ngerjain sub-tugas">
-                    <a href="<?= $row['Link'] ?>"><button><img src="../assets/Tugas/edit.png"> Ngerjain Kuy</button></a>
-                </div>
-            </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
 

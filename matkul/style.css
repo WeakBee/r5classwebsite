@@ -2,6 +2,7 @@ body{
     background-color: var(--warna3) ;
 }
 .container{
+    position: relative;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
     padding: 30px 90px;
