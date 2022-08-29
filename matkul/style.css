@@ -39,7 +39,7 @@ body{
 }
 .card-matkul{
     position: relative;
-    background-color: #ffffff;
+    background-color: #eaeef873;
     height: 230px;
     width: 260px;
     text-align: center;
@@ -114,7 +114,6 @@ body{
         padding: 0 30px;
     }
     .card-matkul{
-        background-color: var(--warna2);
         height: auto;
         width: auto;
         padding: 30px 0px;
