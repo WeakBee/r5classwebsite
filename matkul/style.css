@@ -38,7 +38,8 @@ body{
     text-decoration: none;
 }
 .card-matkul{
-    background-color: var(--warna2);
+    position: relative;
+    background-color: #d6def365;
     height: 230px;
     width: 260px;
     text-align: center;
@@ -46,9 +47,21 @@ body{
     border-radius: 15px;
     margin: 15px 20px;
     transition: 0.5s;
+    overflow: hidden;
 }
 .card-matkul:hover{
     transform: scale(1.1);
+}
+.card-matkul p , .card-matkul div{
+    position: relative;
+    z-index: 2;
+}
+.card-matkul .background-image{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 0;
+    opacity: 0.1;
 }
 .image-icon{
     background-color: var(--warna3);
@@ -57,6 +70,7 @@ body{
     width: 70px;
     height: 70px;
     padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .card-matkul p{
     margin-bottom: 0;
