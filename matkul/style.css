@@ -63,7 +63,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 0;
-    opacity: 0.05;
+    opacity: 0.15;
 }
 .image-icon{
     background-color: var(--warna3);
