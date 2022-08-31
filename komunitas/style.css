@@ -26,7 +26,7 @@ body{
     justify-content: center;
 }
 .row-motivasi .center-row{
-    width: 70%;
+    width: 80%;
 }
 .card-motivasi{
     background-color: var(--warna1);
@@ -44,8 +44,6 @@ body{
 
 /* ROW MEET */
 .row-row-meet{
-    height: 650px;
-    overflow-y: scroll;
     margin-bottom: 30px;
 }
 .card-meet{
@@ -156,6 +154,6 @@ body{
 }
 .card-meet-keterangan p{
     margin: 0;
-    font-size: 25px;
+    font-size: 16px;
 }
 /* ROW MEET */
