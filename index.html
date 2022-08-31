@@ -23,48 +23,48 @@
     <div class="container">
         <div class="nav-bar">
             <div class="logo">
-                <img src="assets/Navbar/icon-white.png" width="30px">
+                <img src="assets/Navbar/icon-white.svg" width="30px">
                 <span>R5CLASS</span>
             </div>
             <a href="">
                 <div>
-                    <img src="assets/Navbar/dashboard.png">
+                    <img src="assets/Navbar/dashboard.svg">
                     <span>Dashboard</span>
                 </div>
             </a>
             <a href="./komunitas/">
                 <div>
-                    <img src="assets/Navbar/komunitas.png">
+                    <img src="assets/Navbar/komunitas.svg">
                     <span>Komunitas</span>
                 </div>
             </a>
             <a href="./tugas/">
                 <div>
-                    <img src="assets/Navbar/tugas.png">
+                    <img src="assets/Navbar/tugas.svg">
                     <span>Tugas</span>
                 </div>
             </a>
             <a href="./hubungi-kami/">
                 <div>
-                    <img src="assets/Navbar/hubungikami.png">
+                    <img src="assets/Navbar/hubungikami.svg">
                     <span>Hubungi Kami</span>
                 </div>
             </a>
             <a href="./pengaturan/">
                 <div>
-                    <img src="assets/Navbar/pengaturan.png">
+                    <img src="assets/Navbar/pengaturan.svg">
                     <span>Pengaturan</span>
                 </div>
             </a>
             <a href="./matkul/">
                 <div>
-                    <img src="assets/Navbar/matkul.png">
+                    <img src="assets/Navbar/matkul.svg">
                     <span>Kelas</span>
                 </div>
             </a>
             <a href="./login/">
                 <div>
-                    <img src="assets/Navbar/Sign_out_squre.png">
+                    <img src="assets/Navbar/Sign_out_squre.svg">
                     <span>Logout</span>
                 </div>
             </a>
@@ -90,6 +90,19 @@
                 <script>
                     $(document).ready(function() {
                         myTimer();
+                        var time = new Date();
+                        $('.senin , .selasa , .kamis , .jumat , .else').hide();
+                        if(time.getDay() == 1){
+                            $('.senin').show();
+                        } else if(time.getDay() == 2){
+                            $('.selasa').show();
+                        } else if(time.getDay() == 4){
+                            $('.kamis').show();
+                        } else if(time.getDay() == 5){
+                            $('.jumat').show();
+                        } else{
+                            $('.else').show();
+                        }
                     });
                     setInterval(myTimer, 10000);
                     function myTimer() {
@@ -143,9 +156,10 @@
                 </div>
                 <!-- AKTIVITAS -->
 
-               <!-- MATKUL -->
+            <!-- MATKUL -->
+            <h4 class="judul"><u>M</u>ATKUL HARI INI</h4>
                 <!-- Senin -->
-                <div class="d-flex senin">
+                <div class="matkul senin">
                     <div class="card">
                         <img src="./assets/Matkul/image/Keamanan Komputer Image.webp">
                         <div class="content">
@@ -165,7 +179,7 @@
                 </div>
                 <!-- Senin -->
                 <!-- Selasa -->
-                <div class="d-flex selasa">
+                <div class="matkul selasa">
                     <div class="card">
                         <img src="./assets/Matkul/image/E Commerce Image.webp">
                         <div class="content">
@@ -185,7 +199,7 @@
                 </div>
                 <!-- Selasa -->
                 <!-- Kamis -->
-                <div class="d-flex kamis">
+                <div class="matkul kamis">
                     <div class="card">
                         <img src="./assets/Matkul/image/Sistem Berbasis Pengetahuan Image.webp">
                         <div class="content">
@@ -205,7 +219,7 @@
                 </div>
                 <!-- Kamis -->
                 <!-- Jumat -->
-                <div class="d-flex jumat">
+                <div class="matkul jumat">
                     <div class="card">
                         <img src="./assets/Matkul/image/Rekayasa Perangkat Lunak Image.webp">
                         <div class="content">
@@ -224,8 +238,16 @@
                     </div>
                 </div>
                 <!-- Jumat -->
-
-                
+                <!-- ELSE -->
+                <div class="matkul else">
+                    <div class="card">
+                        <img src="./assets/Matkul/image/nothing.jpg">
+                        <div class="content">
+                            <h5 class="card-title">Tidak Ada Matkul Hari ini</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ELSE -->
             </div>
             <!-- KOLOM KIRI -->
 
