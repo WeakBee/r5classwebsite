@@ -76,6 +76,7 @@ u {
 
 .card {
     margin: 0px 15px 20px 15px;
+    width: 50%;
     border-radius: 5px;
     border: 0;
     display: flex;
