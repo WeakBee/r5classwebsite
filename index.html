@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- BOOTSTRAP CSS -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
     <link rel="stylesheet" href="warna.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
@@ -85,7 +88,10 @@
                     greeting.innerHTML = welcomeText;
                 </script>
                 <script>
-                    setInterval(myTimer, 500);
+                    $(document).ready(function() {
+                        myTimer();
+                    });
+                    setInterval(myTimer, 10000);
                     function myTimer() {
                         var time = new Date();
                         if (time.getTimezoneOffset() == 0) (a = time.getTime() + (7 * 60 * 60 * 1000))
@@ -106,7 +112,7 @@
                     <h4 class="judul"><u>A</u>KTIVITAS</h4>
                     <div class="scroll">
                         <div class="list d-flex align-items-center">
-                            <div class="poin">+10</div> Mengerjakan Soal no 3 , Mata Kuliah Interaksi Manusia Dan
+                            <div class="poin">+5</div> Mengerjakan Soal no 3 , Mata Kuliah Interaksi Manusia Dan
                             Komputer
                         </div>
                         <div class="list d-flex align-items-center">
@@ -114,7 +120,7 @@
                             Komputer
                         </div>
                         <div class="list d-flex align-items-center">
-                            <div class="poin">+10</div> Mengerjakan Soal no 3 , Mata Kuliah Interaksi Manusia Dan
+                            <div class="poin">+5</div> Mengerjakan Soal no 3 , Mata Kuliah Interaksi Manusia Dan
                             Komputer
                         </div>
                         <div class="list d-flex align-items-center">
@@ -144,7 +150,7 @@
                 </div>
 
                 <!-- MATKUL -->
-                <div class="d-flex">
+                <div class="jadwal-matkul d-lg-flex">
                     <div class="card">
                         <img src="./assets/Hubungi Kami/foto5.png">
                         <div class="content">

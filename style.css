@@ -75,7 +75,6 @@ u {
 }
 
 .card {
-    width: 50%;
     margin: 0px 15px 20px 15px;
     border-radius: 5px;
     border: 0;
@@ -214,6 +213,16 @@ button:hover {
     color: var(--warna7);
 }
 
+@media (max-width: 991.98px) {
+    .kolom-kiri {
+        padding: 100px 20px; 
+        background-color: white;
+    }
+    .card{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
 /* KOLOM KANAN */
 
 
