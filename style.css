@@ -33,8 +33,11 @@ u {
 }
 .poin {
     font-weight: 600;
-    margin-right: 10px;
     font-size: 20px;
+    width: 10%;
+}
+.ket-poin{
+    width: 90%;
 }
 
 .judul {
@@ -47,6 +50,7 @@ u {
     border-radius: 15px;
     margin: 0px 10px 15px 0;
     padding: 15px;
+    display: flex;
 }
 
 .scroll {
@@ -219,10 +223,27 @@ button:hover {
     color: var(--warna7);
 }
 
+.button-responsive{
+    display: none;
+}
 @media (max-width: 991.98px) {
     .kolom-kiri {
         padding: 100px 20px; 
         background-color: white;
+    }
+    .kolom-kanan {
+        padding: 80px 20px; 
+        box-shadow: none;
+    }
+    .greeting-box{
+        text-align: center;
+    }
+    .poin {
+        font-size: 25px;
+        width: 20%;
+    }
+    .ket-poin{
+        width: 80%;
     }
     .judul{
         text-align: center;
@@ -233,6 +254,19 @@ button:hover {
     }
     .matkul{
         display: block;
+    }
+    .button-responsive{
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--warna1);
+        border-radius: 50%;
+        background: rgba( 42, 65, 248, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2.5px );
+        -webkit-backdrop-filter: blur( 2.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
 /* KOLOM KANAN */
