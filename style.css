@@ -271,6 +271,9 @@ button:hover {
 }
 
 @media (max-width: 400px) {
+    .scroll {
+        height: 280px;
+    }
     .list {
         display: block;
         text-align: center;
