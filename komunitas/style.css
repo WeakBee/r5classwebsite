@@ -48,7 +48,7 @@ body{
 }
 .gambar-card{
     position: absolute;
-    bottom: -200px;
+    bottom: 0;
     left: 0;
     z-index: 0;
     width: 100%;
@@ -87,5 +87,32 @@ body{
 @media (max-width: 992px) {
     .container {
         padding: 100px 15px;
+    }
+    .row-motivasi .center-row{
+        width: 100%;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 40px;
+    }
+    .gambar-card{
+        width: 100%;
+    }
+    .card-meet-keterangan{
+        width: 42%;
+    }
+    .row-judul{
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    .gambar-card{
+        height: 100%;
+        width: 100%;
+    }
+    .card-meet-keterangan{
+        width: 60%;
     }
 }

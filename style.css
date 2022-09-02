@@ -269,6 +269,19 @@ button:hover {
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
+
+@media (max-width: 400px) {
+    .list {
+        display: block;
+        text-align: center;
+    }
+    .poin {
+        width: 100%;
+    }
+    .ket-poin{
+        width: 100%;
+    }
+}
 /* KOLOM KANAN */
 
 

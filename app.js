@@ -1,4 +1,5 @@
 // =========GREETINGS==========
+const greetspan = $( ".greetspan" );
 const hour = new Date().getHours();
 const greet = ["Selamat Pagi!", "Selamat Siang!", "Selamat Sore!", "Selamat Malam!"];
 let welcomeText = "";
@@ -8,7 +9,7 @@ else if (hour < 15) welcomeText = greet[1];
 else if (hour < 19) welcomeText = greet[2];
 else welcomeText = greet[3];
 
-greeting.innerHTML = welcomeText;
+$(greetspan).html(welcomeText);
 // =========GREETINGS==========
 
 // ===========TIMER============
