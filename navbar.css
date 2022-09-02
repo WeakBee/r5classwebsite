@@ -70,4 +70,16 @@
     .nav-bar[open] {
         height: 420px;
     }
+    .navbar-bg-dark{
+        transition: 0.5s;
+    }
+    .navbar-bg-dark[open]{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 }
