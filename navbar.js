@@ -14,4 +14,13 @@ if (responsive.matches) {
             navbarbgdark.setAttribute("open", "");
         }
     };  
+    navbarbgdark.onclick = function() {  
+        if (nav_bar.hasAttribute("open")) {
+            nav_bar.removeAttribute("open");
+            navbarbgdark.removeAttribute("open");
+        } else {
+            nav_bar.setAttribute("open", "");
+            navbarbgdark.setAttribute("open", "");
+        }
+    };  
 }
