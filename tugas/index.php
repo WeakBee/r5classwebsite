@@ -31,61 +31,16 @@
   </head>
   <body>
     <div class="container">
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="../assets/Navbar/icon-white.svg" width="30px">
-                <span>R5CLASS</span>
-            </div>
-            <a href="../">
-                <div>
-                    <img src="../assets/Navbar/dashboard.svg">
-                    <span>Dashboard</span>
-                </div>
-            </a>
-            <a href="../komunitas/">
-                <div>
-                    <img src="../assets/Navbar/komunitas.svg">
-                    <span>Komunitas</span>
-                </div>
-            </a>
-            <a href="../tugas/">
-                <div>
-                    <img src="../assets/Navbar/tugas.svg">
-                    <span>Tugas</span>
-                </div>
-            </a>
-            <a href="../hubungi-kami/">
-                <div>
-                    <img src="../assets/Navbar/hubungikami.svg">
-                    <span>Hubungi Kami</span>
-                </div>
-            </a>
-            <a href="../pengaturan/">
-                <div>
-                    <img src="../assets/Navbar/pengaturan.svg">
-                    <span>Pengaturan</span>
-                </div>
-            </a>
-            <a href="../matkul/">
-                <div>
-                    <img src="../assets/Navbar/matkul.svg">
-                    <span>Kelas</span>
-                </div>
-            </a>
-            <a href="../login/">
-                <div>
-                    <img src="../assets/Navbar/Sign_out_squre.svg">
-                    <span>Logout</span>
-                </div>
-            </a>
-        </div>
+        <?php require '../navbar2.php'; ?>
         <div class="row row-judul">
             <div class="col-lg-8 kolom-kiri">
                 <h1>TUGAS</h1>
                 <p>Pastikan anda telah membaca instruksi atau petunjuk pengerjaan tugas ,sebelum membuka dokumen tugas yang tersedia di bawah agar tidak menyulitkan yang lain</p>
             </div>
             <div class="col-lg kolom-kanan">
-                <button class="button-intruksi"><img src="../assets/Tugas/Arhives_group_docks.svg"> Instruksi Pengerjaan Tugas</button>
+                <a href="./instruksi-tugas">
+                    <button class="button-intruksi"><img src="../assets/Tugas/Arhives_group_docks.svg"> Instruksi Pengerjaan Tugas</button>
+                </a>
             </div>
         </div>
         <div class="row row-rangkuman">

@@ -114,6 +114,34 @@ a{
 .nama{
     width: 49% !important;
 }
+.error{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+.red-attr{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    margin-right: 10px;
+}
+.error div img{
+    margin:0 20px;
+}
+.error h3{
+    font-weight: 700;
+}
+.error h3, .error p {
+    margin: 0;
+    font-size: 16px;
+}
 /* KOLOM KANAN */
 @media (max-width: 991.98px) { 
     .container{

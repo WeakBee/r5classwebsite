@@ -45,6 +45,15 @@ u {
     margin: 20px 0 20px 0;
 }
 
+.list-kosong {
+    border-radius: 15px;
+    margin: 0px 0 10px 0;
+    text-align: center;
+    padding: 15px 0;
+    border: 3px dashed var(--warna2);
+    color: var(--warna2);
+}
+.list-kosong h3 {margin: 0;}
 .list {
     background-color: var(--warna2);
     border-radius: 15px;
@@ -54,7 +63,7 @@ u {
 }
 
 .scroll {
-    height: 210px;
+    max-height: 210px;
     overflow-y: scroll;
     margin-bottom: 30px;
 }
@@ -126,6 +135,7 @@ u {
 }
 
 .profile-image {
+    background-color: white;
     border-radius: 50%;
     width: 150px;
     display: block;
@@ -184,21 +194,18 @@ u {
     width: 30%;
 }
 
-.satu {
+.list-leaderboard:nth-child(2){
     background-color: var(--warna8);
     font-weight: 700;
 }
-
-.dua {
+.list-leaderboard:nth-child(3){
     background-color: var(--warna9);
     font-weight: 700;
 }
-
-.tiga {
+.list-leaderboard:nth-child(4){
     background-color: var(--warna10);
     font-weight: 700;
 }
-
 
 .btn-setting {
     position: absolute;
@@ -271,9 +278,6 @@ button:hover {
 }
 
 @media (max-width: 400px) {
-    .scroll {
-        height: 280px;
-    }
     .list {
         display: block;
         text-align: center;

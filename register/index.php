@@ -1,3 +1,42 @@
+<?php 
+session_start();
+
+if(isset($_SESSION["login"])){
+    header("Location: ../login");
+    exit;
+}
+require '../functions.php';
+
+if( isset($_POST["submit"])){
+    global $conn;
+
+    $namaDepan = $_POST["namaDepan"];
+    $namaBelakang = $_POST["namaBelakang"];
+    $email = $_POST["Email"];
+    $username = strtolower(stripslashes($_POST["Username"]));
+    $password = mysqli_real_escape_string($conn,$_POST["Password"]);
+    $password2 = mysqli_real_escape_string($conn,$_POST["konfirmasiPassword"]);
+
+    //cek username sudah ada atau belum , dan cek password apakah sama
+    $result = mysqli_query($conn, "SELECT Username FROM data_user WHERE Username = '$username'");
+
+    if(mysqli_fetch_assoc($result)){
+        $errorusername = true;
+    } else if($password !== $password2){
+        $errorpassword = true;
+    } else {
+        // Enkripsi Password
+        $password = password_hash($password,PASSWORD_DEFAULT);
+
+        // Tambahkan Userbaru ke database
+        mysqli_query($conn,"INSERT INTO data_user VALUES('','$namaDepan','$namaBelakang','$email','$username','$password','none','10')");
+        
+        // Pindah ke login page
+        header("Location: ../login");
+        exit;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,25 +81,25 @@
             </div>
             <div class="col-lg-6 kolom-kanan">
                 <!-- BIKIN DISINI GUNG BUAT YANG KANAN -->
-                <form action="">
+                <form action="" method="post">
                     <br>
                     <div class="frm"><h3>Sign Up</h3></div>
                     <div class="keterangan"><p>Isi data diri dan daftarkan dirimu agar bisa bergabung bersama kami</p></div>
                     <div class="form-group">
-                    <input type="text" placeholder="Nama Depan" class="nama input-control">
-                    <input type="text" placeholder="Nama Belakang" class="nama input-control">
+                    <input type="text" placeholder="Nama Depan" class="nama input-control" name="namaDepan">
+                    <input type="text" placeholder="Nama Belakang" class="nama input-control" name="namaBelakang">
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control">
+                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control">
+                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username">
                         </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Password" style="width: 100%;" class="input-control">
+                        <input type="password" placeholder="Password" style="width: 100%;" class="input-control" name="Password">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Konfirmasi Password" style="width: 100%;" class="input-control">
+                        <input type="password" placeholder="Konfirmasi Password" style="width: 100%;" class="input-control" name="konfirmasiPassword">
                     </div>
                     <div class="ckls-box">
                         <input id="ckls" type="checkbox" name="check" > 
@@ -72,6 +111,30 @@
 
                 </form>
                 <!-- BIKIN DISINI GUNG BUAT YANG KANAN -->
+                <?php if(isset($errorusername)) : ?>
+                    <div class="error">
+                        <div class="red-attr"></div>
+                        <div>
+                            <img src="../assets/Register/error.svg">
+                        </div>
+                        <div>
+                            <h3>Error</h3>
+                            <p>Username sudah terdaftar</p>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php if(isset($errorpassword)) : ?>
+                    <div class="error">
+                        <div class="red-attr"></div>
+                        <div>
+                            <img src="../assets/Register/error.svg">
+                        </div>
+                        <div>
+                            <h3>Error</h3>
+                            <p>Password Tidak Sesuai</p>
+                        </div>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

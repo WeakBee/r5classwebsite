@@ -14,55 +14,7 @@
   </head>
   <body>
     <div class="container">
-        <div class="navbar-bg-dark"></div>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="../../assets/Navbar/icon-white.svg" width="30px">
-                <span>R5CLASS</span>
-            </div>
-            <a href="../../">
-                <div>
-                    <img src="../../assets/Navbar/dashboard.svg">
-                    <span>Dashboard</span>
-                </div>
-            </a>
-            <a href="../../komunitas/">
-                <div>
-                    <img src="../../assets/Navbar/komunitas.svg">
-                    <span>Komunitas</span>
-                </div>
-            </a>
-            <a href="../../tugas/">
-                <div>
-                    <img src="../../assets/Navbar/tugas.svg">
-                    <span>Tugas</span>
-                </div>
-            </a>
-            <a href="../../hubungi-kami/">
-                <div>
-                    <img src="../../assets/Navbar/hubungikami.svg">
-                    <span>Hubungi Kami</span>
-                </div>
-            </a>
-            <a href="../../pengaturan/">
-                <div>
-                    <img src="../../assets/Navbar/pengaturan.svg">
-                    <span>Pengaturan</span>
-                </div>
-            </a>
-            <a href="../../matkul/">
-                <div>
-                    <img src="../../assets/Navbar/matkul.svg">
-                    <span>Kelas</span>
-                </div>
-            </a>
-            <a href="../../login/">
-                <div>
-                    <img src="../../assets/Navbar/Sign_out_squre.svg">
-                    <span>Logout</span>
-                </div>
-            </a>
-        </div>
+        <?php require '../../navbar3.php'; ?>
         <div class="row row-judul">
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
             <div class="col-lg-1 kolom-kiri">
@@ -94,71 +46,79 @@
             <!-- Ini Tab Content Bawah -->
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="materi">
-                <h4 class="mt-2"></h4>
-                    <div class="row text-center mb-3">
+                    <h4 class="mt-2"></h4>
                     <div class="row">
-                    <div class="kartutim col-lg-4 d-flex justify-content-end">
-                        <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu1">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 1</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
+                        <div class="kartutim col-lg-4">
+                            <a href="">
+                                <div class="card">
+                                    <div class="kartu">
+                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <div class="ket-materi">
+                                            <h3>Materi 1</h3>
+                                            <p>Persamaan Variabel</p>
+                                            <p>14 Agustus 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+                        <div class="kartutim col-lg-4">
+                            <a href="">
+                                <div class="card">
+                                    <div class="kartu">
+                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <div class="ket-materi">
+                                            <h3>Materi 1</h3>
+                                            <p>Persamaan Variabel</p>
+                                            <p>14 Agustus 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+                        <div class="kartutim col-lg-4">
+                            <a href="">
+                                <div class="card">
+                                    <div class="kartu">
+                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <div class="ket-materi">
+                                            <h3>Materi 1</h3>
+                                            <p>Persamaan Variabel</p>
+                                            <p>14 Agustus 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="kartutim col-lg-4 d-flex justify-content-end">
-                            <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu2">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 2</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
+                        <div class="kartutim col-lg-4">
+                            <a href="">
+                                <div class="card">
+                                    <div class="kartu">
+                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <div class="ket-materi">
+                                            <h3>Materi 1</h3>
+                                            <p>Persamaan Variabel</p>
+                                            <p>14 Agustus 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+                        <div class="kartutim col-lg-4">
+                            <a href="">
+                                <div class="card">
+                                    <div class="kartu">
+                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <div class="ket-materi">
+                                            <h3>Materi 1</h3>
+                                            <p>Persamaan Variabel</p>
+                                            <p>14 Agustus 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        </div>
-                        <div class="kartutim col-lg-4 d-flex justify-content-end">
-                            <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu3">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 3</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="kartutim col-lg-4 d-flex justify-content-end">
-                            <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu4">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 4</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="kartutim col-lg-4 d-flex justify-content-end">
-                            <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu5">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 5</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="kartutim col-lg-4 d-flex justify-content-end">
-                            <div class="card" style="width: 18rem;">
-                        <div class="kartu kartu6">
-                            <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
-                            <h3>Materi 6</h3>
-                            <p>Keamanan Komputer</p>
-                            <p>14 Agustus 2022</p>
-                        </div>
-                        </div>
-                        </div>
-                </div>
-                </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="tugas_mandiri">
                     <h4 class="mt-2"></h4>
