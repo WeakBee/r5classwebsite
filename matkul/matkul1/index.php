@@ -25,6 +25,25 @@ if(!isset($_SESSION["login"])){
 }
 
 $id = $_SESSION['id'];
+$matkul= 'Keamanan Komputer';
+
+$tugasAktif = query("SELECT * FROM data_tugas WHERE (Status='aktif' AND Matkul = '$matkul') ORDER BY id DESC");
+$tugasKelompok = query("SELECT * FROM data_tugas WHERE (Status='kelompok' AND Matkul = '$matkul') ORDER BY id DESC");
+$tugasNon = query("SELECT * FROM data_tugas WHERE (Status='non' AND Matkul = '$matkul') ORDER BY id DESC");
+
+$totalaktif = mysqli_num_rows($tugasAktif);
+$totalKelompok = mysqli_num_rows($tugasKelompok);
+$totalSelesai = mysqli_num_rows($tugasNon);
+
+if ($totalaktif == '0'){
+    $tugasaktifkosong = true;
+}
+if ($totalKelompok == '0'){
+    $tugaskelompokkosong = true;
+}
+if ($totalSelesai == '0'){
+    $tugasselesaikosong = true;
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -153,102 +172,104 @@ $id = $_SESSION['id'];
                     <div class="row row-tugas-aktif">
                         <h1>TUGAS AKTIF</h1>
                         <p class="ket-judul">Tugas yang belum melewati batas akhir pengumpulan (Deadline)</p>
-                        <div class="col-12 tugas-matkul">
-                            <div class="matkul sub-tugas">
-                                <p><b>Keamanan Komputer</b></p>
-                                <p>Tugas 3 | 5 Soal</p>
+                        <?php if(isset($tugasaktifkosong)) :  ?>
+                            <div class="col-12 tugas-matkul-kosong">
+                                <h3>Tugas Belum Tersedia</h3>
                             </div>
-                            <div class="diberikan sub-tugas">
-                                <p>Diberikan :</p>
-                                <p><b>5 September</b></p>
-                            </div>
-                            <div class="dikumpulkan sub-tugas">
-                                <p>Dikumpulkan :</p>
-                                <p><b>10 September</b></p>
-                            </div>
-                            <div class="selesai sub-tugas">
-                                <p><b>30%</b> Selesai</p>
-                                <div class="persentase">
-                                    <div class="fill" style="width: 30%;"></div>
+                        <?php endif; ?>
+                        <?php if(!isset($tugasaktifkosong)) :  ?>
+                            <?php foreach( $tugasAktif as $row) : ?>
+                                <div class="col-12 tugas-matkul">
+                                    <div class="matkul sub-tugas">
+                                        <p><b><?= $row['Matkul'] ?> </b></p>
+                                        <p><?= $row['Keterangan'] ?></p>
+                                    </div>
+                                    <div class="diberikan sub-tugas">
+                                        <p>Diberikan :</p>
+                                        <p><b><?= $row['Diberikan'] ?></b></p>
+                                    </div>
+                                    <div class="dikumpulkan sub-tugas">
+                                        <p>Dikumpulkan :</p>
+                                        <p><b><?= $row['Dikumpulkan'] ?></b></p>
+                                    </div>
+                                    <div class="selesai sub-tugas">
+                                        <p><b><?= $row['Persentase'] ?>%</b> Selesai</p>
+                                        <div class="persentase">
+                                            <div class="fill" style="width: <?= $row['Persentase'] ?>%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ngerjain sub-tugas">
+                                        <a href="<?= $row['Link'] ?>"><button><img src="../../assets/Tugas/Edit.svg"> Ngerjain Kuy</button></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ngerjain sub-tugas">
-                                <button><img src="../../assets/Tugas/Edit.svg"> Ngerjain Kuy</button>
-                            </div>
-                        </div>
-                        <div class="col-12 tugas-matkul">
-                            <div class="matkul sub-tugas">
-                                <p><b>Keamanan Komputer</b></p>
-                                <p>Tugas 3 | 5 Soal</p>
-                            </div>
-                            <div class="diberikan sub-tugas">
-                                <p>Diberikan :</p>
-                                <p><b>5 September</b></p>
-                            </div>
-                            <div class="dikumpulkan sub-tugas">
-                                <p>Dikumpulkan :</p>
-                                <p><b>10 September</b></p>
-                            </div>
-                            <div class="selesai sub-tugas">
-                                <p><b>30%</b> Selesai</p>
-                                <div class="persentase">
-                                    <div class="fill" style="width: 30%;"></div>
-                                </div>
-                            </div>
-                            <div class="ngerjain sub-tugas">
-                                <button><img src="../../assets/Tugas/Edit.svg"> Ngerjain Kuy</button>
-                            </div>
-                        </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
                     <div class="row row-tugas-nonaktif">
                         <h1>TUGAS NON-AKTIF</h1>
                         <p class="ket-judul">Tugas yang telah melewati batas akhir pengumpulan (Deadline)</p>
-                        <div class="col-12 tugas-matkul">
-                            <div class="matkul sub-tugas">
-                                <p><b>Keamanan Komputer</b></p>
-                                <p>Tugas 3 | 5 Soal</p>
+                        <?php if(isset($tugasselesaikosong)) :  ?>
+                            <div class="col-12 tugas-matkul-kosong">
+                                <h3>Tugas Belum Tersedia</h3>
                             </div>
-                            <div class="diberikan sub-tugas">
-                                <p>Diberikan :</p>
-                                <p><b>5 September</b></p>
-                            </div>
-                            <div class="dikumpulkan sub-tugas">
-                                <p>Dikumpulkan :</p>
-                                <p><b>10 September</b></p>
-                            </div>
-                            <div class="selesai sub-tugas">
-                                <p><b>100%</b> Selesai</p>
-                                <div class="persentase">
-                                    <div class="fill" style="width: 100%;"></div>
+                        <?php endif; ?>
+                        <?php if(!isset($tugasselesaikosong)) :  ?>
+                            <?php foreach( $tugasNon as $row) : ?>
+                                <div class="col-12 tugas-matkul">
+                                    <div class="matkul sub-tugas">
+                                        <p><b><?= $row['Matkul'] ?> </b></p>
+                                        <p><?= $row['Keterangan'] ?></p>
+                                    </div>
+                                    <div class="diberikan sub-tugas">
+                                        <p>Diberikan :</p>
+                                        <p><b><?= $row['Diberikan'] ?></b></p>
+                                    </div>
+                                    <div class="dikumpulkan sub-tugas">
+                                        <p>Dikumpulkan :</p>
+                                        <p><b><?= $row['Dikumpulkan'] ?></b></p>
+                                    </div>
+                                    <div class="selesai sub-tugas">
+                                        <p><b><?= $row['Persentase'] ?>%</b> Selesai</p>
+                                        <div class="persentase">
+                                            <div class="fill" style="width: <?= $row['Persentase'] ?>%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="ngerjain sub-tugas">
+                                        <a href="<?= $row['Link'] ?>"><button><img src="../../assets/Tugas/Eye.svg"> Lihat Tugas</button></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ngerjain sub-tugas">
-                                <button><img src="../../assets/Tugas/Eye.svg"> Lihat Tugas</button>
-                            </div>
-                        </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tugas_kelompok">
                     <h4 class="mt-2"></h4>
-                    <div class="row row-tugas-kelompok">
-                        <div class="col-12 tugas-matkul">
-                            <div class="matkul sub-tugas">
-                                <p><b>Keamanan Komputer</b></p>
-                                <p>Tugas Kelompok 1</p>
-                            </div>
-                            <div class="diberikan sub-tugas">
-                                <p>Diberikan :</p>
-                                <p><b>5 September</b></p>
-                            </div>
-                            <div class="dikumpulkan sub-tugas">
-                                <p>Dikumpulkan :</p>
-                                <p><b>10 September</b></p>
-                            </div>
-                            <div class="ngerjain sub-tugas">
-                                <button><img src="../../assets/Tugas/File_dock_search.svg"> Lihat Penjelasan Tugas</button>
-                            </div>
+                    <?php if(isset($tugaskelompokkosong)) :  ?>
+                        <div class="col-12 tugas-matkul-kosong">
+                            <h3>Tugas Belum Tersedia</h3>
                         </div>
-                    </div>
+                    <?php endif; ?>
+                    <?php if(!isset($tugaskelompokkosong)) :  ?>
+                        <?php foreach( $tugasKelompok as $row) : ?>
+                            <div class="col-12 tugas-matkul">
+                                <div class="matkul sub-tugas">
+                                    <p><b><?= $row['Matkul'] ?> </b></p>
+                                    <p><?= $row['Keterangan'] ?></p>
+                                </div>
+                                <div class="diberikan sub-tugas">
+                                    <p>Diberikan :</p>
+                                    <p><b><?= $row['Diberikan'] ?></b></p>
+                                </div>
+                                <div class="dikumpulkan sub-tugas">
+                                    <p>Dikumpulkan :</p>
+                                    <p><b><?= $row['Dikumpulkan'] ?></b></p>
+                                </div>
+                                <div class="ngerjain sub-tugas">
+                                    <a href="<?= $row['Link'] ?>"><button><img src="../../assets/Tugas/File_dock_search.svg"> Lihat Penjelasan Tugas</button></a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <!-- Ini Tab Content Bawah -->
