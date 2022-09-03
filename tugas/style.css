@@ -114,6 +114,7 @@ a{
     text-align: center;
 }
 .row-rangkuman .kolom-kanan .profil-box{
+    position: relative;
     background-color: var(--warna1);
     padding: 3px 20px;
     width: 100%;
@@ -122,6 +123,7 @@ a{
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .row-rangkuman .kolom-kanan .profil-box:nth-child(2){
     background-color: var(--warna8);
@@ -138,12 +140,23 @@ a{
 .profil-box:nth-child(4) .rank{
     color: var(--warna10);
 }
+.data-profil{
+    z-index: 1;
+}
 .data-profil p{
     margin: 0;
     text-align: start;
 }
 .data-profil p:nth-child(1){
     font-weight: 700;
+}
+.profil-box img {
+    position: absolute;
+    right: -20%;
+    bottom: -90px;
+    width: 200px;
+    z-index: 0;
+    opacity: 0.3;
 }
 /* .data-profil img{
     width: 25px;

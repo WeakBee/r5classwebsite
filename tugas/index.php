@@ -1,5 +1,29 @@
 <?php 
+    session_start();
     require '../functions.php';
+    //cek cookie
+    if(isset($_COOKIE['id']) && isset($_COOKIE['key']) ){
+        $id = $_COOKIE['id'];
+        $key = $_COOKIE['key'];
+
+        $result = mysqli_query($conn,"SELECT Username FROM data_user WHERE ID = $id");
+
+        $row = mysqli_fetch_assoc($result);
+
+        // cek cookie dan username
+        if($key === hash('sha256',$row['Username'])){
+            $_SESSION['login'] = true;
+            $_SESSION['id'] = $id;
+        }
+    }
+
+    // CEK LOGIN
+    if(!isset($_SESSION["login"])){
+        header("Location: ../login");
+        exit;
+    }
+
+    $id = $_SESSION['id'];
     // ambil data dengan query
     $tugas = query("SELECT * FROM data_tugas");
     $tugasAktif = query("SELECT * FROM data_tugas WHERE Status='aktif' ORDER BY id DESC");
@@ -13,6 +37,21 @@
 
     if ($totalaktif == '0'){
         $tugasaktifkosong = true;
+    }
+
+    // AMBIL DATA 5 USER DAN DIURUTKAN BERDASARKAN POIN TERBESAR KE TERKECIL
+    $leaderboard = mysqli_query($conn, "SELECT * FROM data_user ORDER BY Poin DESC LIMIT 5");
+    $nomor = 1;
+
+    // Evolusi Pokemon
+    function evolusi($poin){
+        if ($poin < 100){
+            echo "1.png";
+        }else if($poin < 200){
+            echo "2.png";
+        }else if($poin < 300){
+            echo "3.png";
+        }
     }
 ?>
 <!doctype html>
@@ -67,41 +106,17 @@
                 </div>
                 <div class="kolom-kanan">
                     <p class="peserta-terbaik">Peserta Terbaik</p>
-                    <div class="profil-box">
-                        <div class="rank">#1</div>
-                        <div class="data-profil">
-                            <p>Irsyad Sunarko</p>
-                            <p><span>@aksara <img src="../assets/icon-filter/bulbasaur/venusaur.png"></span></p>
+                    <?php foreach( $leaderboard as $rowterbaik) : ?>
+                        <div class="profil-box">
+                            <div class="rank">#<?= $nomor ?></div>
+                            <div class="data-profil">
+                                <p><?= $rowterbaik['NamaDepan'] . " " . $rowterbaik['NamaBelakang'] ?></p>
+                                <p><span>@<?= $rowterbaik['Username'] ?></span></p>
+                            </div>
+                            <img src="../assets/starter-pokemon/<?= $rowterbaik['Icon'] ?>/<?php evolusi($rowterbaik['Poin']); ?>">
                         </div>
-                    </div>
-                    <div class="profil-box">
-                        <div class="rank">#2</div>
-                        <div class="data-profil">
-                            <p>Ichwanul Muslim</p>
-                            <p><span>@weakbee <img src="../assets/icon-filter/caterpie/butterfree.png"></span></p>
-                        </div>
-                    </div>
-                    <div class="profil-box">
-                        <div class="rank">#3</div>
-                        <div class="data-profil">
-                            <p>Batara Putra</p>
-                            <p><span>@ryouma <img src="../assets/icon-filter/charmender/charizard.png"></span></p>
-                        </div>
-                    </div>
-                    <div class="profil-box">
-                        <div class="rank">#4</div>
-                        <div class="data-profil">
-                            <p>Abima Putra</p>
-                            <p><span>@renzen <img src="../assets/icon-filter/pikachu/raichu.png"></span></p>
-                        </div>
-                    </div>
-                    <div class="profil-box">
-                        <div class="rank">#5</div>
-                        <div class="data-profil">
-                            <p>Baihaqi Yulian</p>
-                            <p><span>@qqoi <img src="../assets/icon-filter/squirtle/blastoise.png"></span></p>
-                        </div>
-                    </div>
+                        <?php $nomor = $nomor + 1; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

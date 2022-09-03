@@ -49,11 +49,12 @@ u {
     border-radius: 15px;
     margin: 0px 0 10px 0;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 10px;
     border: 3px dashed var(--warna2);
     color: var(--warna2);
 }
 .list-kosong h3 {margin: 0;}
+
 .list {
     background-color: var(--warna2);
     border-radius: 15px;
@@ -64,7 +65,7 @@ u {
 
 .scroll {
     max-height: 210px;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-bottom: 30px;
 }
 
@@ -135,8 +136,6 @@ u {
 }
 
 .profile-image {
-    background-color: white;
-    border-radius: 50%;
     width: 150px;
     display: block;
     margin-left: auto;
@@ -278,9 +277,13 @@ button:hover {
 }
 
 @media (max-width: 400px) {
+    .scroll {
+        max-height: 280px;
+    }
     .list {
         display: block;
         text-align: center;
+        margin: 0px 0 15px 0;
     }
     .poin {
         width: 100%;

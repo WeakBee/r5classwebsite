@@ -1,3 +1,31 @@
+<?php 
+session_start();
+require '../../functions.php';
+
+//cek cookie
+if(isset($_COOKIE['id']) && isset($_COOKIE['key']) ){
+    $id = $_COOKIE['id'];
+    $key = $_COOKIE['key'];
+
+    $result = mysqli_query($conn,"SELECT Username FROM data_user WHERE ID = $id");
+
+    $row = mysqli_fetch_assoc($result);
+
+    // cek cookie dan username
+    if($key === hash('sha256',$row['Username'])){
+        $_SESSION['login'] = true;
+        $_SESSION['id'] = $id;
+    }
+}
+
+// Cek Login
+if(!isset($_SESSION["login"])){
+    header("Location: ../../login");
+    exit;
+}
+
+$id = $_SESSION['id'];
+?>
 <!doctype html>
 <html lang="en">
   <head>

@@ -99,7 +99,7 @@ if (isset($_POST["submit"])){
                     </div>
                     <div>
                         <h3>Error</h3>
-                        <p>username/ password salah</p>
+                        <p>username / password salah</p>
                     </div>
                 </div>
 			<?php endif; ?>

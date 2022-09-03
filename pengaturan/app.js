@@ -15,6 +15,8 @@ $(document).ready(function(){
     $(".ubah-icon").click(function(){
         var pokemon=$(".kartu-icon[pilih=yes]").attr('pokemon');
         $(".pokemon-icon").attr("pokemon", pokemon);
+        $("#Pokemon").attr("value", pokemon);
+        $("#Pokemonshowtext").text(pokemon);
     });
 });
 

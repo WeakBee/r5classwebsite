@@ -112,6 +112,7 @@ input:focus{
 /* ALERT (BLM KEPAKE) */
 
 .error{
+	background-color: white;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -137,7 +138,10 @@ input:focus{
 }
 .error h3, .error p {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+}
+.error p {
+    font-size: 14px;
 }
 @media (max-width: 992px) { 
 	.container{
