@@ -97,3 +97,15 @@
 .pokemon-icon[pokemon=wurmple]{
     content:url("../assets/starter-pokemon/wurmple/1.png");
 }
+.pokemon-icon[pokemon=magikarp]{
+    content:url("../assets/starter-pokemon/magikarp/1.png");
+}
+.pokemon-icon[pokemon=nidoran_female]{
+    content:url("../assets/starter-pokemon/nidoran_female/1.png");
+}
+.pokemon-icon[pokemon=nidoran_male]{
+    content:url("../assets/starter-pokemon/nidoran_male/1.png");
+}
+.pokemon-icon[pokemon=pikachu]{
+    content:url("../assets/starter-pokemon/pikachu/1.png");
+}

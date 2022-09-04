@@ -243,6 +243,25 @@ if (isset($_POST["simpan"])){
                                     <p>Wurmple</p>
                                 </div>
                             </div>
+                            <h4>Special Pokemon</h4>
+                            <div class="row-dekkartu">
+                                <div class="kartu-icon" pokemon="magikarp">
+                                    <img src="../assets/starter-pokemon/magikarp/1.png">
+                                    <p>Magikarp</p>
+                                </div>
+                                <div class="kartu-icon" pokemon="nidoran_female">
+                                    <img src="../assets/starter-pokemon/nidoran_female/1.png">
+                                    <p>Nidoran ♀</p>
+                                </div>
+                                <div class="kartu-icon" pokemon="nidoran_male">
+                                    <img src="../assets/starter-pokemon/nidoran_male/1.png">
+                                    <p>Nidoran ♂</p>
+                                </div>
+                                <div class="kartu-icon" pokemon="pikachu">
+                                    <img src="../assets/starter-pokemon/pikachu/1.png">
+                                    <p>Pikachu</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="ganti">
                             <div class="cancel-icon">Cancel</div>
