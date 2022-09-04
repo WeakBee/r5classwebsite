@@ -11,6 +11,8 @@ $(document).ready(function(){
     });
     $(".hapus").click(function(){
         $('.pokemon-icon').attr('pokemon','none');
+        $("#Pokemonshowtext").text("Egg");
+        $("#Pokemon").attr("value", "none");
     });
     $(".ubah-icon").click(function(){
         var pokemon=$(".kartu-icon[pilih=yes]").attr('pokemon');
@@ -23,7 +25,7 @@ $(document).ready(function(){
         } else {
             $("#Pokemonshowtext").text(pokemon);
         } 
-        
+        $(".pilih-icon").toggle();
     });
 });
 

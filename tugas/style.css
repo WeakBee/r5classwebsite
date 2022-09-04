@@ -30,6 +30,11 @@ a{
     align-items: center;
     padding: 10px 20px;
     border-radius: 15px;
+    border: 2px solid var(--warna1);
+}
+.row-judul .kolom-kanan .button-intruksi:hover{
+    background-color:transparent;
+    color: var(--warna1);
 }
 .row-judul .kolom-kanan button img{
     margin-right: 10px;
