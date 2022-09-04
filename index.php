@@ -247,6 +247,7 @@ if ($totalaktivitas == '0'){
                         </div>
                         <?php $nomor = $nomor + 1; ?>
                     <?php endforeach; ?>
+                    <a href="" class="lihat-semua"><p>Lihat Semua</p></a>
                 </div>
                 <div class="btn-setting">
                     <a href="./pengaturan/">

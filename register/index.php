@@ -102,23 +102,23 @@ if( isset($_POST["submit"])){
                     <div class="frm"><h3>Sign Up</h3></div>
                     <div class="keterangan"><p>Isi data diri dan daftarkan dirimu agar bisa bergabung bersama kami</p></div>
                     <div class="form-group">
-                    <input type="text" placeholder="Nama Depan" class="nama input-control" name="namaDepan">
-                    <input type="text" placeholder="Nama Belakang" class="nama input-control" name="namaBelakang">
+                    <input type="text" placeholder="Nama Depan" class="nama input-control" name="namaDepan" required>
+                    <input type="text" placeholder="Nama Belakang" class="nama input-control" name="namaBelakang" required>
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email">
+                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username">
+                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username" required>
                         </div>
                     <div class="form-group">
-                        <input type="password" placeholder="Password" style="width: 100%;" class="input-control" name="Password">
+                        <input type="password" placeholder="Password" style="width: 100%;" class="input-control" name="Password" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" placeholder="Konfirmasi Password" style="width: 100%;" class="input-control" name="konfirmasiPassword">
+                        <input type="password" placeholder="Konfirmasi Password" style="width: 100%;" class="input-control" name="konfirmasiPassword" required>
                     </div>
                     <div class="ckls-box">
-                        <input id="ckls" type="checkbox" name="check" > 
+                        <input id="ckls" type="checkbox" name="check" required> 
                         <label class="ckls-label" for="ckls">Saya Setuju dengan <a href="#">Terms and Condition</a> dan <a href="#">Privacy Police</a> dari R5Group</label>
                         </div>
                         <br>

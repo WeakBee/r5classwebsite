@@ -26,6 +26,10 @@ u {
     text-decoration: underline solid var(--warna1);
 }
 
+a{
+    text-decoration: none;
+}
+
 /* KOLOM KIRI */
 .kolom-kiri {
     padding: 30px 10px 0 80px;
@@ -174,6 +178,7 @@ u {
     margin-bottom: 100px;
     background-color: var(--warna12);
     border-radius: 15px;
+    padding-bottom: 5px;
 }
 .leaderboard h5{
     font-weight: 700;
@@ -204,6 +209,15 @@ u {
 .list-leaderboard:nth-child(4){
     background-color: var(--warna10);
     font-weight: 700;
+}
+
+.lihat-semua{
+    color: var(--warna1);
+    font-weight: 600;
+    text-align: center;
+}
+.lihat-semua p{
+    margin-top: 15px;
 }
 
 .btn-setting {
@@ -273,6 +287,9 @@ button:hover {
         backdrop-filter: blur( 2.5px );
         -webkit-backdrop-filter: blur( 2.5px );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .leaderboard {
+        margin-bottom: 10px;
     }
 }
 
