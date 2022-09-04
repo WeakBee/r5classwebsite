@@ -16,7 +16,14 @@ $(document).ready(function(){
         var pokemon=$(".kartu-icon[pilih=yes]").attr('pokemon');
         $(".pokemon-icon").attr("pokemon", pokemon);
         $("#Pokemon").attr("value", pokemon);
-        $("#Pokemonshowtext").text(pokemon);
+        if(pokemon == "nidoran_male"){
+            $("#Pokemonshowtext").text("Nidoran ♂");
+        } else if(pokemon == "nidoran_female"){
+            $("#Pokemonshowtext").text("Nidoran ♀");
+        } else {
+            $("#Pokemonshowtext").text(pokemon);
+        } 
+        
     });
 });
 

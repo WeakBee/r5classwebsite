@@ -106,7 +106,7 @@ if( isset($_POST["submit"])){
                     <input type="text" placeholder="Nama Belakang" class="nama input-control" name="namaBelakang" required>
                     </div>
                     <div class="form-group">
-                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email" required>
+                    <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required>
                     </div>
                     <div class="form-group">
                         <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username" required>
