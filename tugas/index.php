@@ -49,7 +49,7 @@
             echo "1.png";
         }else if($poin < 200){
             echo "2.png";
-        }else if($poin < 300){
+        }else{
             echo "3.png";
         }
     }

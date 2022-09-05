@@ -35,7 +35,7 @@ if ($row['Poin'] < 100){
     $evolusi = "1.png";
 }else if($row['Poin'] < 200){
     $evolusi = "2.png";
-}else if($row['Poin'] < 300){
+}else {
     $evolusi = "3.png";
 }
 
