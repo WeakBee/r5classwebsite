@@ -81,12 +81,12 @@ if( isset($_POST["submit"])){
                 <div class="penjelasan">
                     <div class="gambar"><img src="../assets/Register/User.svg"></div>
                     <div class="keterangan"><h5>Username</h5>
-                        <p>Gunakan Username tanpa spasi ataupun menggunakan lambang seperti: &,*,(,), dll. Username juga memiliki batas 25 Karakter.</p> </div>
+                        <p>Gunakan Username tanpa spasi ataupun menggunakan lambang seperti: &,*,(,), dll kecuali Titik "." dan Underscore "_". Username juga memiliki batas 15 Karakter.<br>Contoh : <b>weakbee</b> atau <b>weak_bee</b> atau <b>weak.bee</b></p></div>
                 </div>
                 <div class="penjelasan">
                     <div class="gambar"><img src="../assets/Register/Key.svg"></div>
                     <div class="keterangan"><h5>Password</h5>
-                        <p>Password anda dilindungi dengan tekhnologi enkripsi sehingga tidak ada yang bisa melihat isi password anda termasuk <b>admin</b></p></div>
+                        <p>Password anda dilindungi dengan teknologi enkripsi sehingga tidak ada yang bisa melihat maupun mengganti isi password anda termasuk <b>admin</b></p></div>
                 </div>
                 <div class="penjelasan">
                     <div class="gambar"><img src="../assets/Register/Message.svg"></div>
@@ -109,7 +109,7 @@ if( isset($_POST["submit"])){
                     <input type="text" placeholder="Email" style="width: 100%;" class="input-control" name="Email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username" required>
+                        <input type="text" placeholder="Username" style="width: 100%;" class="input-control" name="Username" pattern="^(?=.{4,15}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required>
                         </div>
                     <div class="form-group">
                         <input type="password" placeholder="Password" style="width: 100%;" class="input-control" name="Password" required>
