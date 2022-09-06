@@ -65,7 +65,7 @@ if ($totalSelesai == '0'){
         <div class="row row-judul">
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
             <div class="col-lg-1 kolom-kiri">
-                <img src="../../assets/Matkul/CPU_light.svg" width="60px">
+                <img src="../../assets/Matkul/Edit_alt.svg" width="60px">
             </div>
             <div class="col-lg kolom-kanan">
                 <div>
@@ -99,7 +99,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Komputer Grafik Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -113,7 +113,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Komputer Grafik Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -127,7 +127,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Komputer Grafik Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -141,7 +141,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Komputer Grafik Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -155,7 +155,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Komputer Grafik Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
