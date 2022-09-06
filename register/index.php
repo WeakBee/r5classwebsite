@@ -23,6 +23,8 @@ if(isset($_SESSION["login"])){
     exit;
 }
 
+// ==============================
+
 if( isset($_POST["submit"])){
     global $conn;
 
@@ -44,7 +46,7 @@ if( isset($_POST["submit"])){
         // Enkripsi Password
         $password = password_hash($password,PASSWORD_DEFAULT);
 
-        // Tambahkan Userbaru ke database
+        // Tambahkan User baru ke database
         mysqli_query($conn,"INSERT INTO data_user VALUES('','$namaDepan','$namaBelakang','$email','$username','$password','none','10')");
         
         // Pindah ke login page
