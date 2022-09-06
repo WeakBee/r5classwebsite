@@ -118,7 +118,7 @@ if ($totalaktivitas == '0'){
                             </div>
                         </div>
                     </a>
-                    <a href="./matkul/matkul6">
+                    <a href="./matkul/matkul2">
                         <div class="card">
                             <img src="./assets/Matkul/image/Filsafat Ilmu Image.webp">
                             <div class="content">
@@ -132,7 +132,7 @@ if ($totalaktivitas == '0'){
                 <!-- Senin -->
                 <!-- Selasa -->
                 <div class="matkul selasa">
-                    <a href="./matkul/matkul7">
+                    <a href="./matkul/matkul3">
                         <div class="card">
                             <img src="./assets/Matkul/image/E Commerce Image.webp">
                             <div class="content">
@@ -156,7 +156,7 @@ if ($totalaktivitas == '0'){
                 <!-- Selasa -->
                 <!-- Kamis -->
                 <div class="matkul kamis">
-                    <a href="./matkul/matkul8">
+                    <a href="./matkul/matkul5">
                         <div class="card">
                             <img src="./assets/Matkul/image/Sistem Berbasis Pengetahuan Image.webp">
                             <div class="content">
@@ -166,7 +166,7 @@ if ($totalaktivitas == '0'){
                             </div>
                         </div>
                     </a>
-                    <a href="./matkul/matkul5">
+                    <a href="./matkul/matkul6">
                         <div class="card">
                             <img src="./assets/Matkul/image/Etika Profesi Image.webp">
                             <div class="content">
@@ -180,7 +180,7 @@ if ($totalaktivitas == '0'){
                 <!-- Kamis -->
                 <!-- Jumat -->
                 <div class="matkul jumat">
-                    <a href="./matkul/matkul3">
+                    <a href="./matkul/matkul7">
                         <div class="card">
                             <img src="./assets/Matkul/image/Rekayasa Perangkat Lunak Image.webp">
                             <div class="content">
@@ -190,7 +190,7 @@ if ($totalaktivitas == '0'){
                             </div>
                         </div>
                     </a>
-                    <a href="./matkul/matkul2">
+                    <a href="./matkul/matkul8">
                         <div class="card">
                             <img src="./assets/Matkul/image/Komputer Grafik Image.webp">
                             <div class="content">
@@ -247,7 +247,7 @@ if ($totalaktivitas == '0'){
                         </div>
                         <?php $nomor = $nomor + 1; ?>
                     <?php endforeach; ?>
-                    <a href="" class="lihat-semua"><p>Lihat Semua</p></a>
+                    <a href="./leaderboard" class="lihat-semua"><p>Lihat Semua</p></a>
                 </div>
                 <div class="btn-setting">
                     <a href="./pengaturan/">

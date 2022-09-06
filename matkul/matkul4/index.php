@@ -25,7 +25,7 @@ if(!isset($_SESSION["login"])){
 }
 
 $id = $_SESSION['id'];
-$matkul= 'E-Commerce +)#)';
+$matkul= 'Riset Operasional';
 
 $tugasAktif = query("SELECT * FROM data_tugas WHERE (Status='aktif' AND Matkul = '$matkul') ORDER BY id DESC");
 $tugasKelompok = query("SELECT * FROM data_tugas WHERE (Status='kelompok' AND Matkul = '$matkul') ORDER BY id DESC");
@@ -69,8 +69,8 @@ if ($totalSelesai == '0'){
             </div>
             <div class="col-lg kolom-kanan">
                 <div>
-                    <h1>E-Commerce +)#)</h1>
-                    <p>Muhammad Firdaus S.Kom., M.T.I | Selasa,12:30 - 14:10 WIB</p>
+                    <h1>Riset Opersional</h1>
+                    <p>Yusuf Nugraha, S.Si, M.S.M | Selasa,14:10 - 16:40 WIB</p>
                 </div>
             </div>
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
