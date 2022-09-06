@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--warna3) ;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    position: relative;
+    padding: 30px 40px;
+    min-height: 100vh;
+}
+b{
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+p{
+    margin: 0;
+}
+.row-judul{
+    margin-bottom: 40px;
+}
+.row-judul .col-8 h1{
+    font-weight: 700;
+}
+
+.list-leaderboard{
+    background-color: var(--warna11);
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+.list-leaderboard:nth-child(1){
+    background-color: var(--warna8);
+}
+.list-leaderboard:nth-child(2){
+    background-color: var(--warna9);
+}
+.list-leaderboard:nth-child(3){
+    background-color: var(--warna10);
+}
+.nomor-list{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.user-identity{
+    display: flex;
+    align-items: center;
+}
+.user-identity img{
+    margin-right: 20px;
+}
+.nama {
+    font-weight: 800;
+    font-size: 23px;
+}
+.username{
+    font-size: 18px;
+    font-weight: 500;
+}
+.ket-poin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ket-poin div{
+    margin: 0 10px;
+    text-align: center;
+}
+.judul-matkul{
+    font-size: 20px;
+    font-weight: 800;
+}
+.poin-matkul{
+    font-weight: 500;
+}
+.total-poin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 35px;
+    border-radius: 15px;
+}
+
+@media (max-width: 992px) {
+    .kembali span{
+        display: none;
+    }
+    .list-leaderboard{
+        padding: 0 0px;
+        text-align: center;
+    }
+    .user-identity{
+        display: block;
+        margin: 10px 0;
+    }
+    .user-identity img{
+        margin-right: 0;
+    }
+    .ket-poin{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .total-poin{
+        width: 60%;
+        margin: 15px auto;
+    }
+}

@@ -61,25 +61,25 @@ $id = $_SESSION['id'];
                         <div><img class="image-icon" src="../assets/Matkul/CPU_light.svg"></div>
                         <p class="judul-matkul">Keamanan Komputer</p>
                         <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <p class="jam-matkul">12:30 - 14:10</p>
                     </div>
                 </a>
                 <a href="./matkul2/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/Komputer Grafik Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Edit_alt.svg"></div>
-                        <p class="judul-matkul">Komputer Grafik</p>
+                        <img class="background-image" src="../assets/Matkul/image/Filsafat Ilmu Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Mortarboard_alt_light.svg"></div>
+                        <p class="judul-matkul">Filsafat Ilmu</p>
                         <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <p class="jam-matkul">14:10 - 15:50</p>
                     </div>
                 </a>
                 <a href="./matkul3/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/Rekayasa Perangkat Lunak Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Server.svg"></div>
-                        <p class="judul-matkul">Rekayasa Perangkat Lunak</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <img class="background-image" src="../assets/Matkul/image/E Commerce Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Shop.svg"></div>
+                        <p class="judul-matkul">E-Commerce</p>
+                        <p class="hari-matkul">Setiap Hari Selasa</p>
+                        <p class="jam-matkul">12:30 - 14:10</p>
                     </div>
                 </a>
             </div>
@@ -89,46 +89,46 @@ $id = $_SESSION['id'];
                         <img class="background-image" src="../assets/Matkul/image/Riset Operasional Image.webp">
                         <div><img class="image-icon" src="../assets/Matkul/Search_alt.svg"></div>
                         <p class="judul-matkul">Riset Operasional</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <p class="hari-matkul">Setiap Hari Selasa</p>
+                        <p class="jam-matkul">14:10 - 16:40</p>
                     </div>
                 </a>
                 <a href="./matkul5/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/Etika Profesi Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Tie_light_light.svg"></div>
-                        <p class="judul-matkul">Etika Profesi</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <img class="background-image" src="../assets/Matkul/image/Sistem Berbasis Pengetahuan Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Atom_light.svg"></div>
+                        <p class="judul-matkul">Sistem Berbasis Pengetahuan</p>
+                        <p class="hari-matkul">Setiap Hari Kamis</p>
+                        <p class="jam-matkul">12:30 - 14:10</p>
                     </div>
                 </a>
                 <a href="./matkul6/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/Filsafat Ilmu Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Mortarboard_alt_light.svg"></div>
-                        <p class="judul-matkul">Filsafat Ilmu</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <img class="background-image" src="../assets/Matkul/image/Etika Profesi Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Tie_light_light.svg"></div>
+                        <p class="judul-matkul">Etika Profesi</p>
+                        <p class="hari-matkul">Setiap Hari Kamis</p>
+                        <p class="jam-matkul">14:10 - 15:50</p>
                     </div>
                 </a>
             </div>
             <div class="col-12">
                 <a href="./matkul7/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/E Commerce Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Shop.svg"></div>
-                        <p class="judul-matkul">E-Commerce</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <img class="background-image" src="../assets/Matkul/image/Rekayasa Perangkat Lunak Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Server.svg"></div>
+                        <p class="judul-matkul">Rekayasa Perangkat Lunak</p>
+                        <p class="hari-matkul">Setiap Hari Jum'at</p>
+                        <p class="jam-matkul">13:00 - 15:30</p>
                     </div>
                 </a>
                 <a href="./matkul8/">
                     <div class="card-matkul">
-                        <img class="background-image" src="../assets/Matkul/image/Sistem Berbasis Pengetahuan Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Atom_light.svg"></div>
-                        <p class="judul-matkul">Sistem Berbasis Pengetahuan</p>
-                        <p class="hari-matkul">Setiap Hari Senin</p>
-                        <p class="jam-matkul">08:30 - 10:00</p>
+                        <img class="background-image" src="../assets/Matkul/image/Komputer Grafik Image.webp">
+                        <div><img class="image-icon" src="../assets/Matkul/Edit_alt.svg"></div>
+                        <p class="judul-matkul">Komputer Grafik</p>
+                        <p class="hari-matkul">Setiap Hari Jum'at</p>
+                        <p class="jam-matkul">15:30 - 18:00</p>
                     </div>
                 </a>
             </div>
