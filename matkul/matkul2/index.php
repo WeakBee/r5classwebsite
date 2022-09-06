@@ -25,7 +25,7 @@ if(!isset($_SESSION["login"])){
 }
 
 $id = $_SESSION['id'];
-$matkul= 'Keamanan Komputer';
+$matkul= 'Filsafat Ilmu';
 
 $tugasAktif = query("SELECT * FROM data_tugas WHERE (Status='aktif' AND Matkul = '$matkul') ORDER BY id DESC");
 $tugasKelompok = query("SELECT * FROM data_tugas WHERE (Status='kelompok' AND Matkul = '$matkul') ORDER BY id DESC");
@@ -65,12 +65,12 @@ if ($totalSelesai == '0'){
         <div class="row row-judul">
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
             <div class="col-lg-1 kolom-kiri">
-                <img src="../../assets/Matkul/CPU_light.svg" width="60px">
+                <img src="../../assets/Matkul/Mortarboard_alt_light.svg" width="60px">
             </div>
             <div class="col-lg kolom-kanan">
                 <div>
-                    <h1>Keamanan Komputer</h1>
-                    <p>Ridwan, S.T., M.Eng | Senin,12.30 - 14.10 WIB</p>
+                    <h1>Filsafat Ilmu</h1>
+                    <p>Munasiah, M.Pd | Senin,14.10 - 15.50 WIB</p>
                 </div>
             </div>
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
@@ -99,7 +99,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -113,7 +113,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -127,7 +127,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -141,7 +141,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
@@ -155,7 +155,7 @@ if ($totalSelesai == '0'){
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
+                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
                                         <div class="ket-materi">
                                             <h3>Materi 1</h3>
                                             <p>Persamaan Variabel</p>
