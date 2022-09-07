@@ -62,10 +62,13 @@ if ($totalSelesai == '0'){
   <body>
     <div class="container">
         <?php require '../../navbar3.php'; ?>
+        <div class="row row-kembali mb-3">
+            <a href="../" class="kembali d-flex align-items-center fw-bold" style="color: var(--warna6);"><img src="../../assets/Tugas/Expand_left.svg"><span>Kembali</span></a>
+        </div>
         <div class="row row-judul">
             <!-- Kalo mau ganti paling Asset sama tulisannya aja za -->
             <div class="col-lg-1 kolom-kiri">
-                <img src="../../assets/Matkul/Edit_alt.svg" width="60px">
+                <img src="../../assets/Matkul/komputergrafik.svg" width="60px">
             </div>
             <div class="col-lg kolom-kanan">
                 <div>

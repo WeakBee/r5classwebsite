@@ -125,7 +125,7 @@ $id = $_SESSION['id'];
                 <a href="./matkul8/">
                     <div class="card-matkul">
                         <img class="background-image" src="../assets/Matkul/image/Komputer Grafik Image.webp">
-                        <div><img class="image-icon" src="../assets/Matkul/Edit_alt.svg"></div>
+                        <div><img class="image-icon" src="../assets/Matkul/komputergrafik.svg"></div>
                         <p class="judul-matkul">Komputer Grafik</p>
                         <p class="hari-matkul">Setiap Hari Jum'at</p>
                         <p class="jam-matkul">15:30 - 18:00</p>
