@@ -117,7 +117,7 @@
                     <div class="col-lg-1 nomor-list">#<?= $nomer ?></div>
                     <div class="col-lg-5 user-identity">
                         <img src="../assets/starter-pokemon/<?= $orang['Icon'] ?>/<?php evolusi($orang['Poin']) ?>">
-                        <div>
+                        <div class="boxnama-username">
                             <p class="nama"><?= $orang['NamaDepan'] . " " . $orang['NamaBelakang'] ?></p>
                             <p class="username">@<?= $orang['Username'] ?></p>
                         </div>

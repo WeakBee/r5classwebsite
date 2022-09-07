@@ -60,9 +60,16 @@ p{
 .user-identity img{
     margin-right: 20px;
 }
+.boxnama-username{
+    width: 80%;
+}
 .nama {
     font-weight: 800;
     font-size: 23px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .username{
     font-size: 18px;
@@ -96,6 +103,12 @@ p{
     border-radius: 15px;
 }
 
+@media (max-width: 1200px) {
+    .boxnama-username{
+        width: 55%;
+    }
+}
+
 @media (max-width: 992px) {
     .kembali span{
         display: none;
@@ -110,6 +123,9 @@ p{
     }
     .user-identity img{
         margin-right: 0;
+    }
+    .boxnama-username{
+        width: 100%;
     }
     .ket-poin{
         display: grid;
