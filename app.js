@@ -46,6 +46,16 @@ function myTimer() {
 }
 // ===========TIMER============
 
+// ========LIHAT JADWAL========
+$('.show-popup').hide();
+$( ".lihat-jadwal" ).click(function() {
+    $(".show-popup").toggle();
+});
+$( ".close" ).click(function() {
+    $(".show-popup").toggle();
+});
+// ========LIHAT JADWAL========
+
 // ========KOLOM KANAN=========
 const mediaQuery = window.matchMedia('(max-width: 992px)');
 

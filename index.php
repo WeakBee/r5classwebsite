@@ -74,6 +74,16 @@ if ($totalaktivitas == '0'){
 </head>
 
 <body>
+    <!-- JADWAL PELAJARAN -->
+    <div class="show-popup">
+        <div class="jadwal-kuliah-pop">
+            <img class="close" src="./assets/Dashboard/close.svg">
+            <div>
+                <img src="./assets/jadwaloffline.webp">
+            </div>
+        </div>
+    </div>
+    <!-- JADWAL PELAJARAN -->
     <div class="container">
         <?php require './navbar.php'; ?>
         <div class="row">
@@ -105,7 +115,10 @@ if ($totalaktivitas == '0'){
                 <!-- AKTIVITAS -->
 
                 <!-- MATKUL -->
-                <h4 class="judul"><u>M</u>ATKUL HARI INI</h4>
+                <div class="judul-matkul">
+                    <h4 class="judul"><u>M</u>ATKUL HARI INI</h4> 
+                    <button class="lihat-jadwal">Lihat Jadwal Kuliah</button>
+                </div>
                 <!-- Senin -->
                 <div class="matkul senin">
                     <a href="./matkul/matkul1">

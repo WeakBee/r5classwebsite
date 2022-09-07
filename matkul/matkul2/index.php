@@ -98,7 +98,10 @@ if ($totalSelesai == '0'){
                 <div class="tab-pane fade show active" id="materi">
                     <h4 class="mt-2"></h4>
                     <div class="row">
-                        <div class="kartutim col-lg-4">
+                        <div class="col-12 tugas-matkul-kosong">
+                            <h3>Materi Belum Tersedia</h3>
+                        </div>
+                        <!-- <div class="kartutim col-lg-4">
                             <a href="">
                                 <div class="card">
                                     <div class="kartu">
@@ -111,63 +114,7 @@ if ($totalSelesai == '0'){
                                     </div>
                                 </div>
                             </a>
-                        </div>
-                        <div class="kartutim col-lg-4">
-                            <a href="">
-                                <div class="card">
-                                    <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
-                                        <div class="ket-materi">
-                                            <h3>Materi 1</h3>
-                                            <p>Persamaan Variabel</p>
-                                            <p>14 Agustus 2022</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="kartutim col-lg-4">
-                            <a href="">
-                                <div class="card">
-                                    <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
-                                        <div class="ket-materi">
-                                            <h3>Materi 1</h3>
-                                            <p>Persamaan Variabel</p>
-                                            <p>14 Agustus 2022</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="kartutim col-lg-4">
-                            <a href="">
-                                <div class="card">
-                                    <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
-                                        <div class="ket-materi">
-                                            <h3>Materi 1</h3>
-                                            <p>Persamaan Variabel</p>
-                                            <p>14 Agustus 2022</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="kartutim col-lg-4">
-                            <a href="">
-                                <div class="card">
-                                    <div class="kartu">
-                                        <img src="../../assets/Matkul/image/Filsafat Ilmu Image.webp">
-                                        <div class="ket-materi">
-                                            <h3>Materi 1</h3>
-                                            <p>Persamaan Variabel</p>
-                                            <p>14 Agustus 2022</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tugas_mandiri">

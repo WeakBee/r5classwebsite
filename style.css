@@ -91,7 +91,39 @@ a{
 .scroll::-webkit-scrollbar-thumb:hover {
     background-color: var(--warna7)
 }
-
+.show-popup{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.219);
+    z-index: 1001;
+}
+.jadwal-kuliah-pop{
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.show-popup img{
+    width: 90%;
+}
+.show-popup .close{
+    width: 20px;
+    cursor: pointer;
+}
+.judul-matkul{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.lihat-jadwal{
+    position: absolute;
+    right: 0;
+}
 .card {
     margin: 0px 15px 20px 15px;
     border-radius: 15px;
@@ -293,6 +325,26 @@ button:hover {
     }
     .leaderboard {
         margin-bottom: 10px;
+    }
+    .judul-matkul{
+        position: relative;
+        display: block;
+    }
+    .lihat-jadwal{
+        display: block;
+        position:static;
+        margin: 0 auto 10px auto;
+    }
+    .jadwal-kuliah-pop{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .jadwal-kuliah-pop div{
+        overflow: auto;
+    }
+    .show-popup img{
+        width: 600px;
     }
 }
 
