@@ -31,8 +31,60 @@
         }
         echo $KGVal;
     }
-    
 
+    function RPL($username){
+        $RPLVal = 0;
+        $RPL = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='Rekayasa Perangkat Lunak' ) ");
+        foreach ($RPL as $baris) {
+            $RPLVal = $RPLVal + $baris['Poin'];
+        }
+        echo $RPLVal;
+    }
+    
+    function RO($username){
+        $ROVal = 0;
+        $RO = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='Riset Operasional' ) ");
+        foreach ($RO as $baris) {
+            $ROVal = $ROVal + $baris['Poin'];
+        }
+        echo $ROVal;
+    }
+
+    function EP($username){
+        $EPVal = 0;
+        $EP = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='Etika Profesi' ) ");
+        foreach ($EP as $baris) {
+            $EPVal = $EPVal + $baris['Poin'];
+        }
+        echo $EPVal;
+    }
+
+    function FI($username){
+        $FIVal = 0;
+        $FI = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='Filsafat Ilmu' ) ");
+        foreach ($FI as $baris) {
+            $FIVal = $FIVal + $baris['Poin'];
+        }
+        echo $FIVal;
+    }
+
+    function EC($username){
+        $ECVal = 0;
+        $EC = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='E-Commerce' ) ");
+        foreach ($EC as $baris) {
+            $ECVal = $ECVal + $baris['Poin'];
+        }
+        echo $ECVal;
+    }
+
+    function SBP($username){
+        $SBPval = 0;
+        $SBP = query("SELECT * FROM data_aktivitas WHERE (Username='$username' AND Matkul='Sistem Berbasis Pengetahuan' ) ");
+        foreach ($SBP as $baris) {
+            $SBPval = $SBPval + $baris['Poin'];
+        }
+        echo $SBPval;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,27 +133,27 @@
                         </div>
                         <div>
                             <p class="judul-matkul">RPL</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php RPL($orang['Username']); ?></p>
                         </div>
                         <div>
                             <p class="judul-matkul">RO</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php RO($orang['Username']); ?></p>
                         </div>
                         <div>
                             <p class="judul-matkul">EP</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php EP($orang['Username']); ?></p>
                         </div>
                         <div>
                             <p class="judul-matkul">FI</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php FI($orang['Username']); ?></p>
                         </div>
                         <div>
                             <p class="judul-matkul">EC</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php EC($orang['Username']); ?></p>
                         </div>
                         <div>
                             <p class="judul-matkul">SBP</p>
-                            <p class="poin-matkul"><?php KK($orang['Username']); ?></p>
+                            <p class="poin-matkul"><?php SBP($orang['Username']); ?></p>
                         </div>
                     </div>
                     <div class="col-lg-1 total-poin">
