@@ -3,6 +3,11 @@
     <div class="logo">
         <img src="assets/Navbar/icon-white.svg" width="30px">
         <span>R5CLASS</span>
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <a href="">
         <div>

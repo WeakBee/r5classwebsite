@@ -115,7 +115,7 @@ if ($totalaktivitas == '0'){
                 <!-- AKTIVITAS -->
 
                 <!-- MATKUL -->
-                <div class="judul-matkul">
+                <div class="judul-matkul mb-3">
                     <h4 class="judul"><u>M</u>ATKUL HARI INI</h4> 
                     <button class="lihat-jadwal">Lihat Jadwal Kuliah</button>
                 </div>
