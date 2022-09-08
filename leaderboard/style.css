@@ -30,6 +30,7 @@ p{
 }
 .row-judul .col-8 h1{
     font-weight: 700;
+    margin: 0;
 }
 
 .list-leaderboard{
@@ -102,6 +103,9 @@ p{
     font-size: 35px;
     border-radius: 15px;
 }
+.arrow{
+    display: none;
+}
 
 @media (max-width: 1200px) {
     .boxnama-username{
@@ -110,22 +114,44 @@ p{
 }
 
 @media (max-width: 992px) {
+    .container{
+        padding: 40px 20px 0 20px;
+    }
     .kembali span{
         display: none;
     }
     .list-leaderboard{
-        padding: 0 0px;
+        position: relative;
+        padding: 0 0px 20px 0;
         text-align: center;
     }
+    .nomor-list{
+        width: 15%;
+        font-size: 23px;
+        padding: 0;
+        padding-left: 10px;
+    }
     .user-identity{
+        position: relative;
+        width: 80%;
         display: block;
         margin: 10px 0;
+        text-align: start;
     }
     .user-identity img{
+        position: absolute;
         margin-right: 0;
+        top: -22px;
+        right: -25px;
     }
     .boxnama-username{
         width: 100%;
+    }
+    .boxnama-username .nama{
+        font-size: 18px;
+    }
+    .boxnama-username .username{
+        font-size: 16px;
     }
     .ket-poin{
         display: grid;
@@ -135,6 +161,31 @@ p{
     }
     .total-poin{
         width: 60%;
-        margin: 15px auto;
+        margin: 15px auto 25px auto;
+    }
+    .arrow{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 20px;
+    }
+    .arrow div{
+        width: 10px;
+        height: 2px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .arrow div:nth-child(1){
+        transform: rotate(45deg) translateX(2px);
+    }
+    .arrow div:nth-child(2){
+        transform: rotate(-45deg) translateX(-2px);
+    }
+    .list-leaderboard[open] .arrow div:nth-child(1){
+        transform: rotate(-45deg) translateX(2px);
+    }
+    .list-leaderboard[open] .arrow div:nth-child(2){
+        transform: rotate(45deg) translateX(-2px);
     }
 }

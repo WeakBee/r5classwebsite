@@ -97,6 +97,9 @@
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- BOOTSTRAP CSS -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
 	<link rel="stylesheet" href="../warna.css">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -106,7 +109,7 @@
             <div class="col-2 d-flex align-items-center">
                 <a href="../" class="kembali"><img src="../assets/Tugas/Expand_left.svg"><span>Kembali</span></a>
             </div>
-            <div class="col-8 text-center">
+            <div class="col-8 d-flex align-items-center justify-content-center">
                 <h1>LEADERBOARD</h1>
             </div>
             <div class="col-2"></div>
@@ -114,8 +117,8 @@
         <div class="row-leaderboard">
             <?php foreach( $leaderboard as $orang) : ?>
                 <div class="row list-leaderboard">
-                    <div class="col-lg-1 nomor-list">#<?= $nomer ?></div>
-                    <div class="col-lg-5 user-identity">
+                    <div class="col-1 nomor-list">#<?= $nomer ?></div>
+                    <div class="col-5 user-identity">
                         <img src="../assets/starter-pokemon/<?= $orang['Icon'] ?>/<?php evolusi($orang['Poin']) ?>">
                         <div class="boxnama-username">
                             <p class="nama"><?= $orang['NamaDepan'] . " " . $orang['NamaBelakang'] ?></p>
@@ -159,10 +162,15 @@
                     <div class="col-lg-1 total-poin">
                         <p><?= $orang['Poin'] ?></p>
                     </div>
+                    <div class="arrow">
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <?php $nomer = $nomer + 1; ?>
             <?php endforeach; ?>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
