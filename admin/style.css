@@ -1,0 +1,65 @@
+body{
+    background-color: var(--warna3) ;
+}
+.container{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    padding: 30px 90px;
+}
+.row-judul{
+    margin-bottom: 30px;
+}
+.row-judul .kolom-kiri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-judul .kolom-kanan{
+    display: flex;
+    align-items: center;
+}
+
+.row-judul .kolom-kanan h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+.row-judul .kolom-kanan p{
+    margin: 0;
+}
+
+form{
+	margin:15px 0;
+}
+.form-group {
+	margin-bottom: 15px;
+	border-radius: 15px;
+	
+}
+
+.form-group .input-control {
+	padding: 10px 16px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size:15px;
+	border-radius: 15px;
+	border:1px solid #000107;
+	
+}
+
+.btn{
+
+	width: 200px;
+	padding:5px 16px;
+	font-size:15px;
+	background-color: rgb(65, 65, 117);
+	border-radius: 15px;
+	color:rgb(247, 247, 247);
+	
+}
+
+.btn:hover {
+	cursor: pointer;
+}
