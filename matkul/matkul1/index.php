@@ -102,7 +102,7 @@ if ($totalSelesai == '0'){
                             <h3>Materi Belum Tersedia</h3>
                         </div>
                         <!-- <div class="kartutim col-lg-4">
-                            <a href="">
+                            <a href="../../assets/Materi/NOTE MEET 2.pdf">
                                 <div class="card">
                                     <div class="kartu">
                                         <img src="../../assets/Matkul/image/Keamanan Komputer Image.webp">
