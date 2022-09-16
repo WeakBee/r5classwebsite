@@ -30,9 +30,42 @@ if(isset($_POST['submit'])){
 
     $Username = $_POST['username'];
     $Poin = $_POST['poin'];
-    echo $Username;
-    echo $Poin;
-    // mysqli_query($conn, "UPDATE data_user set poin='$Poin' WHERE username='$Username'"); 
+     mysqli_query($conn, "UPDATE data_user set poin='$Poin' WHERE username='$Username'"); 
+}
+$id = $_SESSION['id'];
+
+if(isset($_POST['submit2'])){
+    global $conn;
+
+    
+    $Username = $_POST["username"];
+    $Nomor = $_POST["nomor"];
+    $Matkul = $_POST["matakuliah"];
+    $Poin = $_POST["poin"];
+     mysqli_query($conn, "INSERT INTO data_aktivitas VALUES ('','$Username','$Nomor','$Matkul','$Poin')"); 
+}
+if(isset($_POST['submit3'])){
+    global $conn;
+
+    
+    $Matkul = $_POST["matkul"];
+    $Keterangan = $_POST["keterangan"];
+    $Diberikan = $_POST["diberikan"];
+    $Dikumpulkan = $_POST["dikumpulkan"];
+    $Presentase = $_POST["presentase"];
+    $Link = $_POST["link"];
+
+    $Status= $_POST["status"];
+     mysqli_query($conn, "INSERT INTO data_tugas VALUES ('','$Matkul','$Keterangan','$Diberikan','$Dikumpulkan','$Presentase','$Link','$Status')"); 
+}
+if(isset($_POST['submit4'])){
+    global $conn;
+
+    
+    $Matkul = $_POST["matkul"];
+    $Keterangan = $_POST["keterangan"];
+    $Status = $_POST["status"];
+     mysqli_query($conn, "UPDATE data_tugas SET keterangan='$Keterangan','status='$Status' WHERE matkul='$Matkul'");
 }
 ?>
 
@@ -93,21 +126,172 @@ if(isset($_POST['submit'])){
                                                 $query =mysqli_query($conn, "SELECT * FROM data_user");
                                                 while ($data =mysqli_fetch_array($query)){
                                             ?>
-                                            <option value="<?= $data['Username']." | ".$data['Poin'];?>"><?php echo $data['Username']." | ".$data['Poin'];?></option>
+                                            <option value="<?= $data['Username']?>"><?php echo $data['Username'] ?></option>
                                             <?php
                                                 }
                                             ?>
                                         </select>
                                         <br></br>
                                         <div class="form-group">
-                                            <label>Poin</label>
+                                            <label>Poin awal</label>
+                                            <input type="text" name="" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Update Poin</label>
                                             <input type="text" name="poin" class="input-control">
                                         </div>
                                     </div>
                                     <input type="submit" name="submit" value="Simpan" class="btn">
                                 </form>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                        <div class="tab-pane fade" id="data_aktivitas">
+                        <h4 class="mt-2"></h4>
+                    <div class="row">
+                        <div class="kartutim col-lg-4">
+                    <form action="" method="POST">
+                                    <div class="form-group">
+                                        <label>Update Point</label>
+                                        <select name="username" class="input-control">
+                                            <?php
+                                                $query =mysqli_query($conn, "SELECT * FROM data_user");
+                                                while ($data =mysqli_fetch_array($query)){
+                                            ?>
+                                            <option value="<?= $data['Username']?>"><?php echo $data['Username'] ?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                        
+                                        <div class="form-group">
+                                            <label>No</label>
+                                            <input type="text" name="nomor" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Matkul</label>
+                                            <select name="matakuliah" class="input-control">
+                                                <option>Keamanan Komputer</option>
+                                                <option>Filsafat Ilmu</option>
+                                                <option>Riset Operasional</option>
+                                                <option>E-Commerce</option>
+                                                <option>Sistem Berbasis Pengetahuan</option>
+                                                <option>Rekayasa Perangkat Lunak</option>
+                                                <option>Komputer Grafik</option>
+                                                <option>Etika Profesi</option>
+                                            </select>
+                                            
+                                            <div class="form-group">
+                                            <label>Poin</label>
+                                            <input type="text" name="poin" class="input-control">
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" name="submit2" value="Simpan" class="btn">
+                                </form>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                            
+                    <div class="tab-pane fade" id="data_tugas">
+                        <h4 class="mt-2"></h4>
+                    <div class="row">
+                        <div class="kartutim col-lg-4">
+                    <form action="" method="POST">
+                                    <div class="form-group">
+                                        <label>Update Point</label>
+                                        <select name="matkul" class="input-control">
+                                        <option>Keamanan Komputer</option>
+                                                <option>Filsafat Ilmu</option>
+                                                <option>Riset Operasional</option>
+                                                <option>E-Commerce</option>
+                                                <option>Sistem Berbasis Pengetahuan</option>
+                                                <option>Rekayasa Perangkat Lunak</option>
+                                                <option>Komputer Grafik</option>
+                                                <option>Etika Profesi</option>
+                                            </select>
+                                        
+                                        <div class="form-group">
+                                            <label>Keterangan</label>
+                                            <input type="text" name="keterangan" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Diberikan</label>
+                                            <input type="text" name="diberikan" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Dikumpulkan</label>
+                                            <input type="text" name="dikumpulkan" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Persentase</label>
+                                            <input type="text" name="presentase" class="input-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Link</label>
+                                            <input type="text" name="link" class="input-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select name="status" class="input-control">
+                                                <option>aktif</option>
+                                                <option>non</option>
+                                                <option>kelompok</option>
+                                               
+                                            </select>
+                                            </div>
+                                         </div>
+                                    <input type="submit" name="submit3" value="Simpan" class="btn">
+                                </form>
                             </div>
                         </div>
+                                            </div>
+                                            </div>
+                    <div class="tab-pane fade" id="update_tugas">
+                    <h4 class="mt-2"></h4>
+                    <div class="row">
+                        <div class="kartutim col-lg-4">
+                            <div class="update-poin">
+                                <form action="" method="POST">
+                                    <div class="form-group">
+                                        <label>Matkul</label>
+                                        <select name="matkul" class="input-control">
+                                            <?php
+                                                $query =mysqli_query($conn, "SELECT * FROM data_tugas");
+                                                while ($data =mysqli_fetch_array($query)){
+                                            ?>
+                                            <option value="<?= $data['Matkul']?>"><?php echo $data['Matkul'] ?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                        <label>Keterangan</label>
+                                        <select name="keterangan" class="input-control">
+                                            <?php
+                                                $query =mysqli_query($conn, "SELECT * FROM data_tugas");
+                                                while ($data =mysqli_fetch_array($query)){
+                                            ?>
+                                            <option value="<?= $data['Keterangan']?>"><?php echo $data['Keterangan'] ?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                        <label>Status</label>
+                                        <select name="status" class="input-control">
+                                            <option value>aktif</option value>
+                                            <option value>non</option value>
+                                            <option value>kelompok</option value>
+                                        </select>
+                                    <input type="submit" name="submit4" value="Simpan" class="btn">
+                                </form>
+                                                </div>
+                                                </div>
+                                            
+                    </div>
+                </div>
                     </div>
                 </div>
         
