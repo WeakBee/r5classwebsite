@@ -24,7 +24,18 @@ if(!isset($_SESSION["login"])){
     exit;
 }
 $id = $_SESSION['id'];
+
+if(isset($_POST['submit'])){
+    global $conn;
+
+    $Username = $_POST['username'];
+    $Poin = $_POST['poin'];
+    echo $Username;
+    echo $Poin;
+    // mysqli_query($conn, "UPDATE data_user set poin='$Poin' WHERE username='$Username'"); 
+}
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -73,38 +84,28 @@ $id = $_SESSION['id'];
                     <h4 class="mt-2"></h4>
                     <div class="row">
                         <div class="kartutim col-lg-4">
-                              <div class="update-poin">
-                              <form action="" method="POST">
-                              <div class="form-group">
-                                            <label>Update Point</label>
-                                            <select name="username" class="input-control">
-						<?php
-						$query =mysqli_query($conn, "SELECT * FROM data_user");
-						while ($data =mysqli_fetch_array($query)){
-						?>
-						<option value="<?= $data['Username']." | ".$data['Poin'];?>"><?php echo $data['Username']." | ".$data['Poin'];?></option>
-                        <?php
-						}
-						?>
-                        </select>
-                        <br></br>
-                        <div class="form-group">
-                        <label>Poin</label>
-						<input type="text" name="poin" class="input-control">
-						</div>
-                        <div>
-                        <input type="submit" name="submit" value="Simpan" class="btn">
-                    </form>
-                    <?php
-                    $conn;
-                    $Username = $_POST['username'];
-                    $Poin = $_POST['poin'];
-			
-			if(isset($_POST['submit'])){
-				mysqli_query($conn, "UPDATE data_user set poin='$Poin' WHERE username='$Username'"); 
-                }
-                ?>
-                                       
+                            <div class="update-poin">
+                                <form action="" method="POST">
+                                    <div class="form-group">
+                                        <label>Update Point</label>
+                                        <select name="username" class="input-control">
+                                            <?php
+                                                $query =mysqli_query($conn, "SELECT * FROM data_user");
+                                                while ($data =mysqli_fetch_array($query)){
+                                            ?>
+                                            <option value="<?= $data['Username']." | ".$data['Poin'];?>"><?php echo $data['Username']." | ".$data['Poin'];?></option>
+                                            <?php
+                                                }
+                                            ?>
+                                        </select>
+                                        <br></br>
+                                        <div class="form-group">
+                                            <label>Poin</label>
+                                            <input type="text" name="poin" class="input-control">
+                                        </div>
+                                    </div>
+                                    <input type="submit" name="submit" value="Simpan" class="btn">
+                                </form>
                             </div>
                         </div>
                     </div>
