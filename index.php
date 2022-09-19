@@ -127,7 +127,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Keamanan Komputer</h5>
                                 <p>12:30 - 14:10 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -137,7 +137,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Filsafat Ilmu</h5>
                                 <p>14:10 - 15:50 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -151,7 +151,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">E-Commerce</h5>
                                 <p>12:30 - 14:10 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -161,7 +161,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Riset Operasional</h5>
                                 <p>14:10 - 16:40 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -175,7 +175,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Sistem Berbasis Pengetahuan</h5>
                                 <p>12:30 - 14:10 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -185,7 +185,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Etika Profesi</h5>
                                 <p>14:10 - 15:50 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -199,7 +199,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Rekayasa Perangkat Lunak</h5>
                                 <p>13:00 - 15:30 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
@@ -209,7 +209,7 @@ if ($totalaktivitas == '0'){
                             <div class="content">
                                 <h5 class="card-title">Komputer Grafik</h5>
                                 <p>15:30 - 18:00 WIB</p>
-                                <p>Pertemuan 1</p>
+                                <p>Pertemuan 2</p>
                             </div>
                         </div>
                     </a>
